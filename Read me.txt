@@ -1,0 +1,12 @@
+There is just 1 config file involved.
+/common/config.inc.php
+
+The only variables you have to adjust are:
+
+BASE_PATH (Change this to the web root directory)
+BASE_URL (Change this to the URL of the tool)
+ERROR_LOG_PATH (Change this to a path outside of web root)
+
+There is no database involved.
+
+In the final step, there is a PDF generation step. For this, the directory used is /temp and all of the folders inside. So, you'll want to make them writable by the server.

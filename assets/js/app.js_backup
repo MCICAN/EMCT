@@ -1,0 +1,35 @@
+import * as config from "./configurations/config.js";
+import { Suite } from "./models/Suite.js";
+import { SuiteRenderer } from "./services/SuiteRenderer.js";
+import { ThreeDRenderer } from "./services/ThreeDRenderer.js";
+import { LanguageService } from "./services/LanguageService.js";
+import { NavigationController } from "./controllers/NavigationController.js";
+import { SuiteController } from "./controllers/SuiteController.js";
+import { LanguageController } from "./controllers/LanguageController.js";
+import { $, all } from "./utilities/domUtils.js";
+
+window.addEventListener("load", () => {
+	const canvas = $("#suiteCanvas");
+	const ctx = canvas.getContext("2d");
+	
+	// Create an empty suite
+	const suite = new Suite(false, true);
+	
+	// Create a suite renderer
+	const suiteRenderer = new SuiteRenderer(ctx, suite, 1, 1);
+	
+	// Create a 3D renderer
+	const threeDRenderer = new ThreeDRenderer(suite, 1, 1);
+	
+	// Create a language service
+	const languageService = new LanguageService();
+	
+	// Create a language controller (page_loader is removed in LanguageService.loadLanguage())
+	const languageController = new LanguageController(languageService, suite, "en");
+	
+	// Create a navigation controller
+	const navigationController = new NavigationController(suite, suiteRenderer, threeDRenderer, languageService);
+	
+	// Create a suite controller
+	const suiteController = new SuiteController(canvas, suite, suiteRenderer, threeDRenderer, navigationController, languageService);
+});
