@@ -45,38 +45,38 @@ export class NavigationController {
 		const self = this;
 		
 		// Previous button
-		$("#nav_previous").addEventListener("click", () => {
-			const requested_step = self.currentStep - 1;
-			if(self.currentStep != requested_step && (requested_step >= 1 || requested_step <= self.maxAllowedStep)){
-				self.requestStep(requested_step);
-			}
-		});
+		// $("#nav_previous").addEventListener("click", () => {
+		// 	const requested_step = self.currentStep - 1;
+		// 	if(self.currentStep != requested_step && (requested_step >= 1 || requested_step <= self.maxAllowedStep)){
+		// 		self.requestStep(requested_step);
+		// 	}
+		// });
 		
 		// Next button
-		$("#nav_next").addEventListener("click", () => {
-			// Go from step 1 to step 2 for the first time
-			if(self.currentStep == 1 && self.maxAllowedStep == 1){
-				self.goFromStep1ToStep2();
-				return;
-			}
+		// $("#nav_next").addEventListener("click", () => {
+		// 	// Go from step 1 to step 2 for the first time
+		// 	if(self.currentStep == 1 && self.maxAllowedStep == 1){
+		// 		self.goFromStep1ToStep2();
+		// 		return;
+		// 	}
 			
-			// Go from step 2 to step 3 for the first time
-			if(self.currentStep == 2 && self.maxAllowedStep == 2){
-				self.goFromStep2ToStep3();
-				return;
-			}
+		// 	// Go from step 2 to step 3 for the first time
+		// 	if(self.currentStep == 2 && self.maxAllowedStep == 2){
+		// 		self.goFromStep2ToStep3();
+		// 		return;
+		// 	}
 			
-			// Go from step 4 to step 5 for the first time
-			if(self.maxAllowedStep == 4){
-				self.goFromStep4ToStep5();
-				return;
-			}
+		// 	// Go from step 4 to step 5 for the first time
+		// 	if(self.maxAllowedStep == 4){
+		// 		self.goFromStep4ToStep5();
+		// 		return;
+		// 	}
 			
-			const requested_step = self.currentStep + 1;
-			if(self.currentStep != requested_step && (requested_step >= 1 || requested_step <= self.maxAllowedStep)){
-				self.requestStep(requested_step);
-			}
-		});
+		// 	const requested_step = self.currentStep + 1;
+		// 	if(self.currentStep != requested_step && (requested_step >= 1 || requested_step <= self.maxAllowedStep)){
+		// 		self.requestStep(requested_step);
+		// 	}
+		// });
 		
 		// Step links
 		all("[data-navigation-step-link]").forEach((el) => {
@@ -160,31 +160,31 @@ export class NavigationController {
 	enableNextStepButton(for_which_step){
 		if(for_which_step == 2){
 			$("#step1NextButton").disabled = false;
-			$("#nav_next").disabled = false;
+			// $("#nav_next").disabled = false;
 		}
 		if(for_which_step == 3){
 			$("#step2_3NextButton").disabled = false;
-			$("#nav_next").disabled = false;
+			// $("#nav_next").disabled = false;
 		}
 		if(for_which_step == 4){
 			$("#step2_3NextButton").disabled = false;
-			$("#nav_next").disabled = false;
+			// $("#nav_next").disabled = false;
 		}
 	}
 	
 	disableNextStepButton(for_which_step){
 		if(for_which_step == 2){
 			$("#step1NextButton").disabled = true;
-			$("#nav_next").disabled = true;
+			// $("#nav_next").disabled = true;
 		}
 		if(for_which_step == 3){
 			$("#step2_3NextButton").disabled = true;
-			$("#nav_next").disabled = true;
+			// $("#nav_next").disabled = true;
 			
 		}
 		if(for_which_step == 4){
 			$("#step2_3NextButton").disabled = true;
-			$("#nav_next").disabled = true;
+			// $("#nav_next").disabled = true;
 		}
 	}
 	
@@ -273,7 +273,7 @@ export class NavigationController {
 		all("[data-navigation-step-connector]").forEach((el) => {
 			el.classList.remove("available");
 		});
-		
+
 		for(let i = 1; i <= this.maxAllowedStep; i++){
 			$("[data-navigation-step='"+i+"']").classList.add("available");
 			if(i > 1){
@@ -283,19 +283,19 @@ export class NavigationController {
 		if(this.currentStep <= this.maxAllowedStep){
 			$("[data-navigation-step='"+this.currentStep+"']").classList.add("active");
 			
-			// Adjust previous button
-			if(this.currentStep > 1){
-				$("#nav_previous").disabled = false;
-			}else{
-				$("#nav_previous").disabled = true;
-			}
+			// // Adjust previous button
+			// if(this.currentStep > 1){
+			// 	$("#nav_previous").disabled = false;
+			// }else{
+			// 	$("#nav_previous").disabled = true;
+			// }
 			
 			// Adjust next button
-			if(this.currentStep < this.maxAllowedStep){
-				$("#nav_next").disabled = false;
-			}else{
-				$("#nav_next").disabled = true;
-			}
+			// if(this.currentStep < this.maxAllowedStep){
+			// 	$("#nav_next").disabled = false;
+			// }else{
+			// 	$("#nav_next").disabled = true;
+			// }
 		}
 		
 		// Show the right main app area
@@ -489,259 +489,6 @@ export class NavigationController {
 //	            $("[data-result-exposed_walls_present]").innerHTML = exposed_walls_present_html;
 //	            $("[data-result-exposed_walls_that_are_less_than_4_point_5_m_apart]").innerHTML = exposed_walls_less_than_html;
 //	            $("[data-result-exposed_walls_that_are_less_than_4_point_5_m_apart_result]").innerHTML = exposed_walls_that_are_less_than_4_point_5_m_apart_formatted_html;
-//	            
-//	            // Populate the notes
-//	            const notes = responseData.data;
-//	            let result_success = [];
-//	            let result_failure = [];
-//	            let result_warning = [];
-//	            let result_additional = [];
-//	            
-//	            // Raw notes to display, if in debug
-//	            const formatted = JSON.stringify(notes, null, 2).replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>').replace(/ /g, ' ');
-//	            $("#raw_notes").innerHTML = formatted;
-//	            
-//	            // Reset saved notes
-//	            this.resetOutputNotes();
-//	            
-//	            // Hide some if size rows initially
-//	            $("#if_size_beam_2_3_sided_tr").classList.add("hidden");
-//	            $("#if_size_beam_4_sided_tr").classList.add("hidden");
-//	            $("#if_size_wall_2_sided_tr").classList.add("hidden");
-//	            
-//	            notes.forEach((note) => {
-//	            	if(note.type == 'Additional_Warnings'){
-//	            		let inside = (this.languageService.currentLanguage == 'en')? note.note.replace(/\n/g, "<br/><br/>").trim() : note.note_french.replace(/\n/g, "<br/><br/>").trim();
-//	            		result_warning.push("<li>"+inside+"</li>");
-//	            		this.outcomeNotes.additional_warning_notes.push(inside);
-//	            	}else if(note.type == 'Required_Additional_Output_Notes'){
-//	            		let inside = (this.languageService.currentLanguage == 'en')? note.note.replace(/\n/g, "<br/><br/>").trim() : note.note_french.replace(/\n/g, "<br/><br/>").trim();
-//	            		result_additional.push("<p>"+inside+"</p>");
-//	            		this.outcomeNotes.additional_notes.push(inside);
-//	            	}else if(note.type == 'Ifs_Sizes'){
-//	            		let note_processed = (this.languageService.currentLanguage == 'en')? note.note.replace(/\n/g, "<br/><br/>").trim() : note.note_french.replace(/\n/g, "<br/><br/>").trim();
-//	            		const offending_objects = note.offending_objects_ids;
-//	            		let offending_beams = [];
-//	            		let offending_columns = [];
-//	            		let offending_walls = [];
-//	            		let is_ceiling_offending = false;
-//	            		offending_objects.forEach((id) => {
-//	            			if(id == 1){
-//	            				is_ceiling_offending = true;
-//	            			}
-//	            			if(id >= 30000 && id <= 39999){
-//	            				offending_beams.push(id);
-//	            			}
-//	            			if(id >= 40000 && id <= 49999){
-//	            				offending_columns.push(id);
-//	            			}
-//	            			if(id >= 20000 && id <= 29999){
-//	            				offending_walls.push(id);
-//	            			}
-//	            			if(id >= 60000 && id <= 69999){
-//	            				offending_walls.push(id);
-//	            			}
-//	            		});
-//	            		let note_offending = "";
-//	            		note_offending += " "+$("[data-language='hidden__step_5_if_sizes_non_compliant_ids']").innerHTML;
-//            			if(offending_beams.length > 0){
-//            				note_offending += " "+$("[data-language='hidden__step_5_if_sizes_non_compliant_ids_beams']").innerHTML+" "+offending_beams.join(", ");
-//            			}
-//            			if(offending_columns.length > 0){
-//            				note_offending += " "+$("[data-language='hidden__step_5_if_sizes_non_compliant_ids_columns']").innerHTML+" "+offending_columns.join(", ");
-//            			}
-//            			if(offending_walls.length > 0){
-//            				note_offending += " "+$("[data-language='hidden__step_5_if_sizes_non_compliant_ids_walls']").innerHTML+" "+offending_walls.join(", ");
-//            			}
-//            			if(is_ceiling_offending){
-//            				const connector = (offending_beams.length > 0 || offending_columns.length > 0 || offending_walls.length > 0)? ", " : " ";
-//            				note_offending += connector+$("[data-language='hidden__step_5_if_sizes_non_compliant_ids_ceiling']").innerHTML;
-//            			}
-//	            		switch(note.note_number){
-//	            			case 3:
-//	            				$("#if_size_beam_2_3_sided_ok").innerHTML = "";
-//		            			$("#if_size_beam_2_3_sided_ok").classList.remove("active");
-//		            			$("#if_size_beam_2_3_sided_ng").innerHTML = note_processed + note_offending;
-//		            			$("#if_size_beam_2_3_sided_ng").classList.add("active");
-//		            			this.outcomeIfSizesResult.beams_columns_2_3_sided_N = note_processed + note_offending;
-//		            			this.outcomeIfSizesResult.beams_columns_2_3_sided_Y = "";
-//		            			$("#if_size_beam_2_3_sided_tr").classList.remove("hidden");
-//		            			break;
-//	            			case 2:
-//	            				$("#if_size_beam_2_3_sided_ok").innerHTML = note_processed;
-//		            			$("#if_size_beam_2_3_sided_ok").classList.add("active");
-//		            			$("#if_size_beam_2_3_sided_ng").innerHTML = "";
-//		            			$("#if_size_beam_2_3_sided_ng").classList.remove("active");
-//		            			this.outcomeIfSizesResult.beams_columns_2_3_sided_N = "";
-//		            			this.outcomeIfSizesResult.beams_columns_2_3_sided_Y = note_processed;
-//		            			$("#if_size_beam_2_3_sided_tr").classList.remove("hidden");
-//		            			break;
-//	            			case 5:
-//	            				$("#if_size_beam_4_sided_ok").innerHTML = "";
-//		            			$("#if_size_beam_4_sided_ok").classList.remove("active");
-//		            			$("#if_size_beam_4_sided_ng").innerHTML = note_processed + note_offending;
-//		            			$("#if_size_beam_4_sided_ng").classList.add("active");
-//		            			this.outcomeIfSizesResult.beams_columns_4_sided_Y = "";
-//		            			this.outcomeIfSizesResult.beams_columns_4_sided_N = note_processed + note_offending;
-//		            			$("#if_size_beam_4_sided_tr").classList.remove("hidden");
-//		            			break;
-//	            			case 4:
-//	            				$("#if_size_beam_4_sided_ok").innerHTML = note_processed;
-//		            			$("#if_size_beam_4_sided_ok").classList.add("active");
-//		            			$("#if_size_beam_4_sided_ng").innerHTML = "";
-//		            			$("#if_size_beam_4_sided_ng").classList.remove("active");
-//		            			this.outcomeIfSizesResult.beams_columns_4_sided_Y = note_processed;
-//		            			this.outcomeIfSizesResult.beams_columns_4_sided_N = "";
-//		            			$("#if_size_beam_4_sided_tr").classList.remove("hidden");
-//		            			break;	
-//	            			case 7:
-//	            				$("#if_size_wall_1_sided_ok").innerHTML = "";
-//		            			$("#if_size_wall_1_sided_ok").classList.remove("active");
-//		            			$("#if_size_wall_1_sided_ng").innerHTML = note_processed + note_offending;
-//		            			$("#if_size_wall_1_sided_ng").classList.add("active");
-//		            			this.outcomeIfSizesResult.walls_1_sided_Y = "";
-//		            			this.outcomeIfSizesResult.walls_1_sided_N = note_processed + note_offending;
-//		            			break;
-//	            			case 6:
-//	            				$("#if_size_wall_1_sided_ok").innerHTML = note_processed;
-//		            			$("#if_size_wall_1_sided_ok").classList.add("active");
-//		            			$("#if_size_wall_1_sided_ng").innerHTML = "";
-//		            			$("#if_size_wall_1_sided_ng").classList.remove("active");
-//		            			this.outcomeIfSizesResult.walls_1_sided_Y = note_processed;
-//		            			this.outcomeIfSizesResult.walls_1_sided_N = "";
-//		            			break;	
-//	            			case 9:
-//	            				$("#if_size_wall_2_sided_ok").innerHTML = "";
-//		            			$("#if_size_wall_2_sided_ok").classList.remove("active");
-//		            			$("#if_size_wall_2_sided_ng").innerHTML = note_processed + note_offending;
-//		            			$("#if_size_wall_2_sided_ng").classList.add("active");
-//		            			this.outcomeIfSizesResult.walls_2_sided_Y = "";
-//		            			this.outcomeIfSizesResult.walls_2_sided_N = note_processed + note_offending;
-//		            			$("#if_size_wall_2_sided_tr").classList.remove("hidden");
-//		            			break;
-//	            			case 8:
-//	            				$("#if_size_wall_2_sided_ok").innerHTML = note_processed;
-//		            			$("#if_size_wall_2_sided_ok").classList.add("active");
-//		            			$("#if_size_wall_2_sided_ng").innerHTML = "";
-//		            			$("#if_size_wall_2_sided_ng").classList.remove("active");
-//		            			this.outcomeIfSizesResult.walls_2_sided_Y = note_processed;
-//		            			this.outcomeIfSizesResult.walls_2_sided_N = "";
-//		            			$("#if_size_wall_2_sided_tr").classList.remove("hidden");
-//		            			break;
-//	            			case 11:
-//	            				$("#if_size_ceiling_ok").innerHTML = "";
-//		            			$("#if_size_ceiling_ok").classList.remove("active");
-//		            			$("#if_size_ceiling_ng").innerHTML = note_processed + note_offending;
-//		            			$("#if_size_ceiling_ng").classList.add("active");
-//		            			this.outcomeIfSizesResult.ceiling_Y = "";
-//		            			this.outcomeIfSizesResult.ceiling_N = note_processed + note_offending;
-//		            			break;
-//	            			case 10:
-//	            				$("#if_size_ceiling_ok").innerHTML = note_processed;
-//		            			$("#if_size_ceiling_ok").classList.add("active");
-//		            			$("#if_size_ceiling_ng").innerHTML = "";
-//		            			$("#if_size_ceiling_ng").classList.remove("active");
-//		            			this.outcomeIfSizesResult.ceiling_Y = note_processed;
-//		            			this.outcomeIfSizesResult.ceiling_N = "";
-//		            			break;
-//	            		}
-//	            	}else if(note.type == 'S' || note.type == 'FC'){
-//	            		if(note.is_compliant){
-//		            		let inside = (this.languageService.currentLanguage == 'en')? note.note.replace(/\n/g, "<br/><br/>").trim() : note.note_french.replace(/\n/g, "<br/><br/>").trim();
-//		            		result_success.push("<li>"+inside+"</li>");
-//		            		this.outcomeNotes.compliant_notes.push(inside);
-//		            	}else{
-//		            		let inside = (this.languageService.currentLanguage == 'en')? note.note.replace(/\n/g, "<br/><br/>").trim() : note.note_french.replace(/\n/g, "<br/><br/>").trim();
-//		            		const offending_objects = note.offending_objects_ids;
-//		            		let offending_beams = [];
-//		            		let offending_columns = [];
-//		            		let offending_walls = [];
-//		            		let is_ceiling_offending = false;
-//		            		offending_objects.forEach((id) => {
-//		            			if(id == 1){
-//		            				is_ceiling_offending = true;
-//		            			}
-//		            			if(id >= 30000 && id <= 39999){
-//		            				offending_beams.push(id);
-//		            			}
-//		            			if(id >= 40000 && id <= 49999){
-//		            				offending_columns.push(id);
-//		            			}
-//		            			if(id >= 20000 && id <= 29999){
-//		            				offending_walls.push(id);
-//		            			}
-//		            			if(id >= 60000 && id <= 69999){
-//		            				offending_walls.push(id);
-//		            			}
-//		            		});
-//		            		if(is_ceiling_offending || offending_beams.length > 0 || offending_columns.length > 0 || offending_walls.length > 0){
-//		            			inside += "<br/><br/>"+$("[data-language='hidden__step_5_encapsulation_non_compliant_ids']").innerHTML + "<br/>";
-//		            			if(offending_beams.length > 0){
-//		            				inside += " "+$("[data-language='hidden__step_5_encapsulation_non_compliant_ids_beams']").innerHTML+" "+offending_beams.join(", ");
-//		            			}
-//		            			if(offending_columns.length > 0){
-//		            				inside += " "+$("[data-language='hidden__step_5_encapsulation_non_compliant_ids_columns']").innerHTML+" "+offending_columns.join(", ");
-//		            			}
-//		            			if(offending_walls.length > 0){
-//		            				inside += " "+$("[data-language='hidden__step_5_encapsulation_non_compliant_ids_walls']").innerHTML+" "+offending_walls.join(", ");
-//		            			}
-//		            			if(is_ceiling_offending){
-//		            				const connector = (offending_beams.length > 0 || offending_columns.length > 0 || offending_walls.length > 0)? ", " : " ";
-//		            				inside += connector+$("[data-language='hidden__step_5_encapsulation_non_compliant_ids_ceiling']").innerHTML;
-//		            			}
-//		            		}
-//		            		
-//		            		result_failure.push("<li>"+inside+"</li>");
-//		            		this.outcomeNotes.non_compliant_notes.push(inside);
-//		            	}
-//	            	}
-//	            });
-//	            
-//	            if(result_success.length > 0){
-//	            	$("#result_success").innerHTML = result_success.join("");
-//	            	$("#result_success_alert").classList.add("shown");
-//	            }else{
-//	            	$("#result_success_alert").classList.remove("shown");
-//	            }
-//	            
-//	            if(result_failure.length > 0){
-//	            	$("#result_failure").innerHTML = result_failure.join("");
-//	            	$("#result_failure_alert").classList.add("shown");
-//	            }else{
-//	            	$("#result_failure_alert").classList.remove("shown");
-//	            }
-//	            
-//	            if(result_warning.length > 0){
-//	            	$("#result_warnings").innerHTML = result_warning.join("");
-//	            	$("#result_warning_alert").classList.add("shown");
-//	            }else{
-//	            	$("#result_warning_alert").classList.remove("shown");
-//	            }
-//	            
-//	            if(result_additional.length > 0){
-//	            	$("#result_additional").innerHTML = result_additional.join("");
-//	            	$("#result_additional_alert").classList.add("shown");
-//	            }else{
-//	            	$("#result_additional_alert").classList.remove("shown");
-//	            }
-//	            
-//	            $("#result_fetch_error").classList.remove("shown");
-//	            
-//	            // Save internally
-//	            this.outcomeCalculations.C = C_html;
-//	            this.outcomeCalculations.P = P_html;
-//	            this.outcomeCalculations.V = V_html;
-//	            this.outcomeCalculations.W = W_html;
-//	            this.outcomeCalculations.W_encap_by_50 = W_encap_by_50_html;
-//	            this.outcomeCalculations.W_encap_by_80 = W_encap_by_80_html;
-//	            this.outcomeCalculations.X = X_html;
-//	            this.outcomeCalculations.S = S_html;
-//	            this.outcomeCalculations.FSR_W = FSR_X_html;
-//	            this.outcomeCalculations.FSR_C = FSR_C_html;
-//	            this.outcomeCalculations.FSR_X = FSR_W_html;
-//	            this.outcomeCalculations.exposed_walls_present = exposed_walls_present_html;
-//	            this.outcomeCalculations.exposed_walls_that_are_less_than_4_point_5_m_apart = exposed_walls_less_than_html;
-//	            this.outcomeCalculations.exposed_walls_that_are_less_than_4_point_5_m_apart_result = exposed_walls_that_are_less_than_4_point_5_m_apart_formatted_html;
 //	        } else {
 //	        	// Error
 //	        	$("#result_fetch_error").classList.add("shown");
@@ -753,6 +500,25 @@ export class NavigationController {
 //	        }
 //	        $("#page_loader").classList.add("hidden");
 		}
+		
+		// Atualiza os ícones dos steps (SVGs)
+		all("[data-navigation-step]").forEach((el) => {
+			const step = parseInt(el.getAttribute("data-navigation-step"));
+			const svgActive = el.querySelector('.circle_svg_active');
+			const svgCompleted = el.querySelector('.circle_svg_completed');
+			const svgInactive = el.querySelector('.circle_svg_inactive');
+			if (svgActive) svgActive.style.display = "none";
+			if (svgCompleted) svgCompleted.style.display = "none";
+			if (svgInactive) svgInactive.style.display = "none";
+
+			if (step === this.currentStep) {
+				if (svgActive) svgActive.style.display = "flex";
+			} else if (el.classList.contains("available")) {
+				if (svgCompleted) svgCompleted.style.display = "flex";
+			} else {
+				if (svgInactive) svgInactive.style.display = "flex";
+			}
+		});
 		
 		this.resetAllSuiteRendererParameters();
 		this.suiteRenderer.draw();
