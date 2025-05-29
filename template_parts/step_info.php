@@ -11,13 +11,11 @@
 			This tool evaluates the necessary dimensions of mass timber elements and the permissible percentages of exposed mass timber elements, including beams, columns, walls, and ceilings within suites and fire compartments.
 		</p>
 	</div>
-	<h4 data-language='step_1__subtitle' data-language-original="Get started by answering the following questions.">
-		Get started by answering the following questions.
-	</h4>
+	
 	<div class='question'>
-		<p data-language='step_1__question_1' data-language-original="Is this a Suite or a Fire Compartment?">
-			Is this a Suite or a Fire Compartment?
-		</p>
+		<h4 data-language='step_1__question_1' data-language-original="Is this a Suite or a Fire Compartment?">
+			Is this a Suite or a Fire Compartment as defined by the 2025 edition of the National Building Code of Canada (NBC)?
+</h3>
 		<div class='choices'>
 			<div class='input_group'>
 				<label class='radio_label'>
@@ -32,10 +30,13 @@
 		</div>
 	</div>
 	<div class='question'>
-		<p data-language='step_1__question_2' data-language-original="Do you want to use millimetres (mm) or inches (in)? (Note that because conversion between millimetres and inches will have some errors, you won't be able to switch the measurement unit, later.)">
-			Do you want to use millimetres (mm) or inches (in)?<br/>
-			(Note that because conversion between millimetres and inches will have some errors, you won't be able to switch the measurement unit, later.)
-		</p>
+		<h4 data-language='step_1__question_2' data-language-original="Do you want to use millimetres (mm) or inches (in)? (Note that because conversion between millimetres and inches will have some errors, you won't be able to switch the measurement unit, later.)">
+			Do you prefer to use millimetres (mm) or inches (in) for your measurements?
+</h4>
+<p>
+	(Please note that once you choose a measurement unit, you won't be able to switch between millimetres and inches later due to potential conversion errors.)
+</p>
+
 		<div class='choices'>
 			<div class='input_group'>
 				<label class='radio_label'>
@@ -51,7 +52,7 @@
 	</div>
 	<div class='button_wrap'>
 		<button class='primary_button' id='step1NextButton' disabled>
-			<span data-language='step_1__next_button' data-language-original="Next">Next</span> &#62;&#62;
+			<span data-language='step_1__next_button' data-language-original="Next">Next Step <img src="assets/images/arrow-right-line.png" /></span> 
 		</button>
 	</div>
 </div>

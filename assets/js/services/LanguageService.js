@@ -65,7 +65,19 @@ export class LanguageService {
 			const original = language.dataset.languageOriginal;
 			let loaded_language_value = this.t(key);
 			loaded_language_value = this.replaceSuiteFireCompartmentStrings(loaded_language_value, is_fire_compartment);
-			language.innerHTML = (loaded_language_value != "")? loaded_language_value : original;
+
+			// Preserve inner HTML for special cases (like step_1__next_button with icon)
+			if (key === 'step_1__next_button') {
+				// Only replace the text node, keep the <img> if present
+				const img = language.querySelector('img');
+				let text = (loaded_language_value !== "") ? loaded_language_value : original;
+				language.innerHTML = text;
+				if (img) {
+					language.appendChild(img);
+				}
+			} else {
+				language.innerHTML = (loaded_language_value !== "") ? loaded_language_value : original;
+			}
 		});
 		
 		// Load alt

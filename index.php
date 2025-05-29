@@ -38,6 +38,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Cabin%3A400%2C500%2C700%2C400italic%2C700italic&amp;ver=4.3.1" rel="stylesheet" id="googleFonts-css"  type="text/css" media="all" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link href="assets/css/style.css?v=20250329" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class='page_loader' id='page_loader'>

@@ -405,7 +405,7 @@ export class NavigationController {
 		// Outcome
 		if(this.currentStep == 5){
 			await this.outcomeService.generateOutcome(this.suite, this.suiteRenderer, this.languageService.currentLanguage);
-//			// Call ajax
+//		 Call ajax
 //			$("#page_loader").classList.remove("hidden");
 //	        const responseData = await this.fetchOutcome(); // Call sendSuiteData and get response
 //			

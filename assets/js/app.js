@@ -12,6 +12,7 @@ import { MouseTracker } from "./utilities/mouseTracker.js?v=20250503";
 
 window.addEventListener("load", () => {
 	const canvas = $("#suiteCanvas");
+	if (!canvas) return; // Corrige erro caso canvas não exista
 	const ctx = canvas.getContext("2d");
 	
 	// Start tracking the mouse as soon as app loads
@@ -41,3 +42,94 @@ window.addEventListener("load", () => {
 	// Create a suite controller
 	const suiteController = new SuiteController(canvas, suite, suiteRenderer, threeDRenderer, navigationController, languageService, outcomeService);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Sidebar close/open logic
+  var structure = document.querySelector('.structure');
+
+  // Botão para toggle (abre/fecha) sidebar
+  document.body.addEventListener('click', function(e) {
+    var toggleBtn = e.target.closest('[data-sidebar-toggle]');
+    if (toggleBtn && structure) {
+      e.preventDefault();
+      structure.classList.toggle('sidebar-closed');
+    }
+    var closeBtnInside = e.target.closest('.sidebar-close-btn-inside');
+    if (closeBtnInside && structure) {
+      e.preventDefault();
+      structure.classList.add('sidebar-closed');
+    }
+  });
+
+  // Fade effect logic
+  var info = document.querySelector(".element_wrap[data-sidebar-type='step_1_instruction'] .input_group.information");
+  if(info) {
+    function checkFade() {
+      if (info.scrollTop > 0) {
+        info.classList.add('at-bottom');
+      } else {
+        info.classList.remove('at-bottom');
+      }
+    }
+    info.addEventListener('scroll', checkFade);
+    checkFade();
+  }
+
+  // Step 4 range sliders dynamic fill
+  const step4Sliders = document.querySelectorAll(
+    ".element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]"
+  );
+  step4Sliders.forEach(slider => {
+    // Initial fill
+    updateStep4RangeSliderFill(slider);
+    // Update on input
+    slider.addEventListener('input', function() {
+      updateStep4RangeSliderFill(slider);
+    });
+  });
+});
+
+// Dynamic gold fill for Step 4 range sliders
+function updateStep4RangeSliderFill(slider) {
+  const min = Number(slider.min) || 0;
+  const max = Number(slider.max) || 100;
+  const val = Number(slider.value);
+  const percent = ((val - min) / (max - min)) * 100;
+  slider.style.setProperty('--percent', percent + '%');
+}
+
+// Garante que apenas o sidebar do step correto tenha .shown
+function ensureOnlyCurrentStepSidebarIsShown() {
+  // Descobre o step atual pelo NavigationController, se disponível
+  let step = 1;
+  if (window.navigationController && window.navigationController.currentStep) {
+    step = window.navigationController.currentStep;
+  } else {
+    // fallback: tenta pelo appArea visível
+    const current = document.querySelector('.mainArea .app .appArea.shown');
+    if (current && current.id) {
+      if (current.id === 'stepInfoArea') step = 1;
+      if (current.id === 'step2DArea') step = 2;
+      if (current.id === 'step3DArea') step = 4;
+      if (current.id === 'stepOutputArea') step = 5;
+    }
+  }
+  // Remove .shown de todos
+  document.querySelectorAll('.element_wrap[data-sidebar-type$="_instruction"]').forEach(el => {
+    el.classList.remove('shown');
+  });
+  // Adiciona .shown só no step correto
+  const sidebar = document.querySelector(`.element_wrap[data-sidebar-type='step_${step}_instruction']`);
+  if (sidebar) sidebar.classList.add('shown');
+}
+
+// Observa mudanças de step (MutationObserver para .appArea.shown)
+function observeStepChangeForSidebar() {
+  const app = document.querySelector('.mainArea .app');
+  if (!app) return;
+  const observer = new MutationObserver(ensureOnlyCurrentStepSidebarIsShown);
+  app.querySelectorAll('.appArea').forEach(area => {
+    observer.observe(area, {attributes: true, attributeFilter: ['class']});
+  });
+}
+document.addEventListener('DOMContentLoaded', observeStepChangeForSidebar);
