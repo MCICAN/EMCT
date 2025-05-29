@@ -174,33 +174,47 @@
 ?>
 
 <?php for($step = 1; $step <= 5; $step++){?>
-<div class='element_wrap <?php if($step == 1){ echo "shown"; } ?>' data-sidebar-type='step_<?php echo $step;?>_instruction'>
+<div class='element_wrap' data-sidebar-type='step_<?php echo $step;?>_instruction'>
 	<!-- Header -->
 	<div class='heading'>
 		<div class='image_wrap'>
 			<?php 
 				switch($step){
-					case 1: echo "<img src='" . BASE_URL ."/assets/images/2_1_info_icon.jpg' alt='Info icon' data-language-alt='alt__info_icon'/>"; break;
-					case 2: echo "<img src='" . BASE_URL ."/assets/images/drawing_of_partially_finished_perimeter.png' alt='Drawing of a partially finished perimeter wall' data-language-alt='alt__partially_finished_perimeter'/>"; break;
-					case 3: echo "<img src='" . BASE_URL ."/assets/images/objects_in_suite_compressed.png' alt='Objects in a suite' data-language-alt='alt__objects_in_a_suite'/>"; break;
-					case 4: echo "<img src='" . BASE_URL ."/assets/images/2_1_3d.png' alt='3D room picture' data-language-alt='alt__3d_room_picture'/>"; break;
-					case 5: echo "<img src='" . BASE_URL ."/assets/images/step5_icon.png' alt='Report icon' data-language-alt='alt__report_icon'/>"; break;
+					case 1: echo "<img src='" . BASE_URL ."/assets/images/info-icon.png' alt='Info'/>"; break;
+					case 2: echo "<img src='" . BASE_URL ."/assets/images/info-icon.png' alt='Info' data-language-alt='alt__partially_finished_perimeter'/>"; break;
+					case 3: echo "<img src='" . BASE_URL ."/assets/images/info-icon.png' alt='Info in a suite' data-language-alt='alt__objects_in_a_suite'/>"; break;
+					case 4: echo "<img src='" . BASE_URL ."/assets/images/info-icon.png' alt='Info' data-language-alt='alt__3d_room_picture'/>"; break;
+					case 5: echo "<img src='" . BASE_URL ."/assets/images/info-icon.png' alt='Report icon' data-language-alt='Icon'/>"; break;
 				}
 			?>
 		</div>
-		<?php 
+		<div class="flex-y">
+			<?php 
 			switch($step){
-				case 1: $nav_text = "Step 1: Enter information"; break;
+				case 1: $nav_text = "Step 1: Enter Background Information"; break;
 				case 2: $nav_text = "Step 2: Design the suite"; break;
 				case 3: $nav_text = "Step 3: Edit the suite"; break;
 				case 4: $nav_text = "Step 4: Visualize the 3D"; break;
 				case 5: $nav_text = "Step 5: See the outcome"; break;
 				default: $nav_text = "";
 			}
-		?>
-		<p data-language='navigation__step<?php echo $step;?>_with_word_step' data-language-original="<?php echo $nav_text;?>">
-			<?php echo $nav_text;?>
-		</p>
+			?>
+			<p data-language='navigation__step<?php echo $step;?>_with_word_step' data-language-original="<?php echo $nav_text;?>" style="display: flex; align-items: center; gap: 8px;">
+    <?php echo $nav_text;?>
+    <button class="sidebar-close-btn-inside" data-sidebar-close-inside title="Fechar sidebar" aria-label="Fechar sidebar" type="button" tabindex="0" style="background: none; border: none; padding: 0; margin-left: 8px; display: inline-flex; align-items: center; cursor: pointer;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M21 18V20H3V18H21ZM6.95 3.55V13.45L2 8.5L6.95 3.55ZM21 11V13H12V11H21ZM21 4V6H12V4H21Z" fill="#757575"/>
+        </svg>
+    </button>
+			</p>
+			<!-- Botão para toggle da sidebar -->
+			<button class="sidebar-toggle-btn" data-sidebar-toggle type="button" style="background: none; border: none; padding: 0; margin-left: 8px; display: inline-flex; align-items: center; cursor: pointer;">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M21 18V20H3V18H21ZM6.95 3.55V13.45L2 8.5L6.95 3.55ZM21 11V13H12V11H21ZM21 4V6H12V4H21Z" fill="#757575"/>
+				</svg>
+			</button>
+		</div>
+		
 	</div>
 	
 	<div class='mainWrap'>
@@ -217,78 +231,89 @@
 			<?php if($step == 1){?>
 			<!-- Step 1 Instruction -->
 			<div class='input_group information shown'>
-				<p data-language='sidebar_instruction__step1_top' data-language-original="Enter the information on the right about this project.">
-					Enter the information on the right about this project.
-				</p>
-				<div class='white_text'>
-					<h5>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-  							<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-						</svg> 
-						<span data-language='sidebar_instruction__step1_white_area_title' data-language-original="About Exposed Mass Timber Calculator">
-							About Exposed Mass Timber Calculator
-						</span>
-					</h5>
-					<div data-language='sidebar_instruction__step1_white_area_text' data-language-original="">
-						<p>
-			         		The Exposed Mass Timber Calculator is designed to help users determine if their encapsulated mass timber construction (EMTC) compartment designs are code-compliant with the 2025 edition of the National Building Code of Canada (NBC). 
-			         	</p>
-			         	<p>
-			         		This tool evaluates the necessary dimensions of mass timber elements and the permissible percentages of exposed mass timber elements, including beams, columns, walls, and ceilings within suites and fire compartments. 
-			         	</p>
-			         	<h5>
-			         		How to use Exposed Mass Timber Calculator Text:
-			         	</h5>
-			         	<p>
-			         		To use the tool, users will need to input the following information regarding their compartment design:
-			         	</p>
-			         	<ul>
-			         		<li>
-			         			Compartment size and perimeter wall layout
-			         		</li>
-			         		<li>
-			         			Compartment designation: Suite or Fire compartment
-			         		</li>
-			         		<li>
-			         			Interior compartment design, including all partitions and openings
-			         		</li>
-			         		<li>
-			         			Location and size of all mass timber elements<br/>
-			         			<ol>
-			         				<li>
-			         					Designation of how many sides of the mass timber element will be exposed to fire 
-			         				</li>
-			         				<li>
-			         					Designation of which mass timber surfaces are encapsulated vs exposed  
-			         				</li>
-			         				<li>
-			         					If encapsulated, designation of where the encapsulation is located
-			         				</li>
-			         			</ol>
-			         		</li>
-			         	</ul>
-			         	<p>
-			         		If the entered compartment configuration is not code-compliant, the tool will generate warnings to alert the user. This feature enables the user to identify whether a compartment design complies with the 2025 NBC.
-			         	</p>
-			         	<p>
-			         		The tool will output a 3-D image of the compartment that the user can view, along with corresponding notes providing the encapsulation requirements and warnings. 
-			         	</p>
-			         	<p>
-			         		A list of definitions of important building code terms is also provided for reference.
-			         	</p>
-			         	<p>
-			         		While the Exposed Mass Timber Calculator facilitates an effective evaluation of permissible exposed mass timber elements in EMTC buildings, it is important to note that numerous other fire safety requirements must be considered in the building design. It is essential to refer to the relevant code articles to ensure compliance with these additional provisions.
-			         	</p>
-			         	<p>
-			         		The Exposed Mass Timber Calculator has been developed for information purposes only. Reference should always be made to the Building Code having jurisdiction. This tool should not be relied upon as a substitute for legal or design advice, and the user is responsible for how the tool is used or applied.
-			         	</p>
-			         	<p>
-			         		We appreciate any feedback or questions that you may have regarding The Exposed Mass Timber Calculator. Please email us via our helpdesk at <a href='https://cwc.ca' target='_blank'>cwc.ca</a>.
-			         	</p>
-			         </div>
-		         </div>
-			</div>
-			<?php }?>
+				
+    <p data-language='sidebar_instruction__step1_top' data-language-original="Enter the information on the right about this project.">
+        Enter the information on the right about this project.
+		
+    </p>
+	
+    <div class='white_text'>
+        <h6>
+            <button class="accordion-toggle-step1" type="button" aria-expanded="true" aria-controls="aboutAccordionContentStep1" style="all:unset;cursor:pointer;display:inline-block;font-weight:bold;">
+                <span data-language='sidebar_instruction__step1_white_area_title' data-language-original="About Exposed Mass Timber Calculator">
+                    About Exposed Mass Timber Calculator 
+                </span>
+				
+                <img class="accordion-arrow-step1" src="assets/images/arrow-down-s-line.png" alt="Toggle" style="margin-left:8px;width:18px;height:18px;transition:transform 0.2s;transform:rotate(0deg);vertical-align:middle;" />
+				
+</svg>
+            </button>
+        </h6>
+        <div id="aboutAccordionContentStep1" class="accordion-content-step1" style="display:block;">
+            <div data-language='sidebar_instruction__step1_white_area_text' data-language-original="">
+                <p>
+                    The Exposed Mass Timber Calculator is designed to help users determine if their encapsulated mass timber construction (EMTC) compartment designs are code-compliant with the 2025 edition of the National Building Code of Canada (NBC).
+					
+                </p>
+				
+                <p>
+                    This tool evaluates the necessary dimensions of mass timber elements and the permissible percentages of exposed mass timber elements, including beams, columns, walls, and ceilings within suites and fire compartments.
+                </p>
+                <p>
+                    How to use Exposed Mass Timber Calculator Text:
+                </p>
+                <p>
+                    To use the tool, users will need to input the following information regarding their compartment design:
+                </p>
+                <ul>
+                    <li>Compartment size and perimeter wall layout</li>
+                    <li>Compartment designation: Suite or Fire compartment</li>
+                    <li>Interior compartment design, including all partitions and openings</li>
+                    <li>Location and size of all mass timber elements<br/>
+                        <ol>
+                            <li>Designation of how many sides of the mass timber element will be exposed to fire</li>
+                            <li>Designation of which mass timber surfaces are encapsulated vs exposed</li>
+                            <li>If encapsulated, designation of where the encapsulation is located</li>
+                        </ol>
+                    </li>
+                </ul>
+                <p>
+                    If the entered compartment configuration is not code-compliant, the tool will generate warnings to alert the user. This feature enables the user to identify whether a compartment design complies with the 2025 NBC.
+                </p>
+                <p>
+                    The tool will output a 3-D image of the compartment that the user can view, along with corresponding notes providing the encapsulation requirements and warnings.
+                </p>
+                <p>
+                    A list of definitions of important building code terms is also provided for reference.
+                </p>
+                <p>
+                    While the Exposed Mass Timber Calculator facilitates an effective evaluation of permissible exposed mass timber elements in EMTC buildings, it is important to note that numerous other fire safety requirements must be considered in the building design. It is essential to refer to the relevant code articles to ensure compliance with these additional provisions.
+                </p>
+                <p>
+                    The Exposed Mass Timber Calculator has been developed for information purposes only. Reference should always be made to the Building Code having jurisdiction. This tool should not be relied upon as a substitute for legal or design advice, and the user is responsible for how the tool is used or applied.
+                </p>
+                <p>
+                    We appreciate any feedback or questions that you may have regarding The Exposed Mass Timber Calculator. Please email us via our helpdesk at <a href='https://cwc.ca' target='_blank'>cwc.ca</a>.
+                </p>
+            </div>
+        </div>
+        <script>
+        // Accordion toggle logic only for Step 1
+        (function(){
+            var btn = document.querySelector('.accordion-toggle-step1');
+            var content = document.getElementById('aboutAccordionContentStep1');
+            var arrow = btn.querySelector('.accordion-arrow-step1');
+            btn.addEventListener('click', function(){
+                var expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', !expanded);
+                content.style.display = expanded ? 'none' : 'block';
+                arrow.style.transform = expanded ? 'rotate(0deg)' : 'rotate(180deg)';
+            });
+        })();
+        </script>
+    </div>
+</div>
+<?php }?>
 			
 			<?php if($step == 2){?>
 			<!-- Step 2 Instruction -->
@@ -297,25 +322,25 @@
 					Create a perimter for your suite. This is an enclosed area consisting of walls on the perimeter.
 				</p>
 				<p>
-					<b>To create the first wall:</b> Left-click the starting point of a wall, drag your mouse to where the wall should end, and release the mouse button. Press down on SHIFT key to make the wall horizontal, vertical, or diagonal.
+					To create the first wall: Left-click the starting point of a wall, drag your mouse to where the wall should end, and release the mouse button. Press down on SHIFT key to make the wall horizontal, vertical, or diagonal.
 				</p>
 				<p>
-					<b>To create subsequent walls:</b> Select one of the orange points and drag your mouse to where the wall should end, and release the mouse button.
+					To create subsequent walls: Select one of the orange points and drag your mouse to where the wall should end, and release the mouse button.
 				</p>
 				<p>
-					<b>To enclose the suite:</b> Connect the last point you drew with the first point you drew to enclose the suite. Once the suite is enclosed, you can move on to the next step.
+					To enclose the suite: Connect the last point you drew with the first point you drew to enclose the suite. Once the suite is enclosed, you can move on to the next step.
 				</p>
 				<p>
-					<b>To select a wall or a point:</b> While holding the CTRL key (or COMMAND key on Mac), click on a wall or point you are interested in fine-tuning. You can fine-tune its position, length, or thickness.
+					To select a wall or a point: While holding the CTRL key (or COMMAND key on Mac), click on a wall or point you are interested in fine-tuning. You can fine-tune its position, length, or thickness.
 				</p>
 				<p>
-					<b>To drag a point:</b> Left-click on the desired point and drag it to where you want it to go.
+					To drag a point: Left-click on the desired point and drag it to where you want it to go.
 				</p>
 				<p>
-					<b>To move the canvas:</b> Right-click a point and drag your mouse.
+					To move the canvas: Right-click a point and drag your mouse.
 				</p>
 				<p>
-					<b>To zoom in or out:</b> Roll the wheel on your mouse forward to zoom in, backward to zoom out.
+					To zoom in or out: Roll the wheel on your mouse forward to zoom in, backward to zoom out.
 				</p>
 				<p>
 					When you are done, click on the &#34;Next&#34; button at the bottom of the screen.
@@ -575,8 +600,7 @@
 				</span>
 				<span class='name' data-language='sidebar_yellow_buttons__edit' data-language-original="Edit">
 					Edit
-				</span>
-			</button>
+				</button>
 		</li>
 		
 		<!-- Copy -->
@@ -602,7 +626,7 @@
 					  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
 					</svg>
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill hide_icon" data-sidebar-hide-show-icon='hide' viewBox="0 0 16 16">
-					  <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+					  <path d="m10.79 12.912-1.614-1.615a.5.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a.5.5 0 0 0-4.474-4.474z"/>
 					  <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
 					</svg>
 				</span>
@@ -634,7 +658,6 @@
 				<span class='icon'>
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
   						<path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
-					</svg>
 				</span>
 				<span class='name' data-language='sidebar_yellow_buttons__add_objects' data-language-original="Add objects">
 					Add objects
@@ -664,7 +687,7 @@
 			<button class='selection_button' data-sidebar-button-action='information' data-sidebar-button-element-type='<?php echo $element['code'];?>' <?php echo ($element['is_info_enabled'])? "" : "disabled";?>>
 				<span class='icon'>
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-  						<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+  						<path d="M8 16A8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
 					</svg>
 				</span>
 				<span class='name' data-language='sidebar_yellow_buttons__info' data-language-original="What it is">
@@ -680,7 +703,6 @@
 				<span class='icon'>
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
   						<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-					</svg>
 				</span>
 				<span class='name' data-language='sidebar_yellow_buttons__delete' data-language-original="Delete">
 					Delete
@@ -1065,15 +1087,15 @@
 				</div>
 				<p class='sucess' data-input-success='true'>
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-					  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+					  <path d="M16 8A8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
 					</svg> 
 					<span data-language='sidebar_input__edit_area_for_encapsulation_completed' data-language-original="You have completed this step.">
 						You have completed this step.
 					</span>
-				</p>
+								</p>
 				<p class='warning' data-input-warning='true'>
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
-					  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+					  <path d="M8.982 1.566a1.13   1 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
 					</svg>
 					<span data-language='sidebar_input__edit_area_for_encapsulation_unsaved_edit' data-language-original="You have an unsaved edit. Click on the Apply button to finalize the edit. If you want to discard this change, simply click on another tab or de-select this object from the drawing.">
 						You have an unsaved edit. Click on the Apply button to finalize the edit. If you want to discard this change, simply click on another tab or de-select this object from the drawing.
@@ -1206,26 +1228,26 @@
 			<!-- Information: Ceiling -->
 			<div class='input_group information' data-input-group-type='information_ceiling' data-language='sidebar_information__about_ceiling' data-language-original="">
 				<p>
-					This is the ceiling of the suite. You can modify the height of ceiling by clicking on Edit or modify its fire property by clicking on Fire property button.
+					This is the ceiling of the suite. You can modify the height of ceiling by clicking on Edit or modify its fire property by clicking on the Fire property button.
 				</p>
 			</div>
 			
 			<!-- Information: Door -->
-			<div class='input_group information' data-input-group-type='information_door' data-language='sidebar_information__about_door' data-language-original="">
+			<div class='input_group information' data-input_group_type='information_door' data-language='sidebar_information__about_door' data-language-original="">
 				<p>
 					This is a door. You can modify its position by clicking on the Move button or its length and height by clicking on the Edit button.
 				</p>
 			</div>
 			
 			<!-- Information: Window -->
-			<div class='input_group information' data-input-group-type='information_window' data-language='sidebar_information__about_window' data-language-original="">
+			<div class='input_group information' data-input_group_type='information_window' data-language='sidebar_information__about_window' data-language-original="">
 				<p>
 					This is a window. It could also represent an opening without glass. You can modify its position by clicking on the Move button above. You can also modify its length, height, or distance from the floor by clicking on the Edit button.
 				</p>
 			</div>
 			
 			<!-- Information: Beam -->
-			<div class='input_group information' data-input-group-type='information_beam' data-language='sidebar_information__about_beam' data-language-original="">
+			<div class='input_group information' data-input_group_type='information_beam' data-language='sidebar_information__about_beam' data-language-original="">
 				<p>
 					This is a beam. It is placed on the ceiling. You can modify its dimensions and position by dragging it in the canvas area, and by clicking on the Move or Edit button on this sidebar.
 				</p>
@@ -1238,7 +1260,7 @@
 			</div>
 			
 			<!-- Information: Column -->
-			<div class='input_group information' data-input-group-type='information_column' data-language='sidebar_information__about_column' data-language-original="">
+			<div class='input_group information' data-input_group_type='information_column' data-language='sidebar_information__about_column' data-language-original="">
 				<p>
 					This is a column. It is placed on the floor and extends onto the ceiling by default. However, you can modify its height as you see fit.
 				</p>
@@ -1254,7 +1276,7 @@
 			</div>
 			
 			<!-- Information: Lightframe wall -->
-			<div class='input_group information' data-input-group-type='information_lightframe_wall' data-language='sidebar_information__about_lightframe_wall' data-language-original="">
+			<div class='input_group information' data-input_group_type='information_lightframe_wall' data-language='sidebar_information__about_lightframe_wall' data-language-original="">
 				<p>
 					This is a lightframe wall. It is by default exposed to fire.
 				</p>
@@ -1270,7 +1292,7 @@
 			</div>
 			
 			<!-- Information: Mass timber wall -->
-			<div class='input_group information' data-input-group-type='information_mass_timber_wall' data-language='sidebar_information__about_mass_timber_wall' data-language-original="">
+			<div class='input_group information' data-input_group_type='information_mass_timber_wall' data-language='sidebar_information__about_mass_timber_wall' data-language-original="">
 				<p>
 					This is a mass timber wall.
 				</p>

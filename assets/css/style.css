@@ -51,7 +51,7 @@
  =================================================================*/
 body {
 	font-family: 'Inter', Helvetica, Verdana, sans-serif;
-	font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body-medium);
 	color:var(--font-color-black);
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -109,7 +109,20 @@ input[type=number]:focus {
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
 }
-
+#stepInfoArea h1 {
+	font-weight: 700;
+}
+.question h4 {
+	color: var(--content-secondary, #2D2D2D);
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.5rem; /* 120% */
+letter-spacing: -0.025rem;
+}
+.intro {
+	padding-bottom: 40px;
+}
 /**=================================================================
  * Spacing
  =================================================================*/
@@ -135,7 +148,9 @@ input[type=number]:focus {
     top: 50%;
     left: 50%;
 }
-
+.step_info {
+	background-color: #f8f8f8;
+}
 /**=================================================================
  * button
  =================================================================*/
@@ -158,18 +173,20 @@ input[type=number]:focus {
 }
 
 .primary_button {
-	padding: 6px 20px;
+	padding: 16px 24px;
 	border: none;
-	border-radius: 8px;
-	background:var(--background-color-yellow);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	background:#9A8142;
 	font-weight:bold;
 	transition:all var(--time-button-movement) ease;
 	user-select: none;
+	color: white;
+	font-weight: 600;
 }
 .primary_button:hover{
-	background:var(--background-color-brightyellow);
-	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+	background:#9A8142;
+	cursor: pointer;
+	
 }
 
 .secondary_button {
@@ -185,7 +202,9 @@ input[type=number]:focus {
 .secondary_button:hover{
 	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
-
+.primary_button img {
+	width: 24px ;
+}
 /**=================================================================
  * Measurement Inputs (in measurement_inputs.php, elements.php, step_info.php)
  =================================================================*/
@@ -231,23 +250,38 @@ label.checkbox_label input[type=checkbox] {
     height: 20px;
 	appearance: none;
 	-webkit-appearance: none;
-	border: 2px solid var(--border-color-grey);
 	background-color: var(--background-color-white);
-	border-radius: 5px;
-}
-label.checkbox_label input[type=checkbox]:checked {
-	background-color: var(--background-color-yellow);
+	
+	position: relative;
 }
 label.checkbox_label input[type=checkbox]:checked::after {
-     content: '\2714'; /* Checkmark symbol */
-     color: var(--font-color-black);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     position: relative;
-     top: -3px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: none;
 }
-
+/* Step 4 custom icon */
+.element_wrap[data-sidebar-type='step_4_instruction'] label.checkbox_label input[type=checkbox]:checked::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: none;
+    pointer-events: none;
+    z-index: 2;
+    /* SVG as background */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3.33333 2.5H16.6667C16.8877 2.5 17.0996 2.5878 17.2559 2.74408C17.4122 2.90036 17.5 3.11232 17.5 3.33333V16.6667C17.5 16.8877 17.4122 17.0996 17.2559 17.2559C17.0996 17.4122 16.8877 17.5 16.6667 17.5H3.33333C3.11232 17.5 2.90036 17.4122 2.74408 17.2559C2.5878 17.0996 2.5 16.8877 2.5 16.6667V3.33333C2.5 3.11232 2.5878 2.90036 2.74408 2.74408C2.90036 2.5878 3.11232 2.5 3.33333 2.5ZM9.16917 13.3333L15.0608 7.44083L13.8825 6.2625L9.16917 10.9767L6.81167 8.61917L5.63333 9.7975L9.16917 13.3333Z" fill="%23CDB060"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
 label.radio_label {
 	display: grid;
     align-items: center;
@@ -255,35 +289,71 @@ label.radio_label {
 	grid-template-columns: 20px 1fr;
 }
 label.radio_label input[type=radio] {
-	width: 20px;
+    width: 20px;
     height: 20px;
-	appearance: none;
-	-webkit-appearance: none;
-	border: 2px solid var(--border-color-grey);
-	background-color: var(--background-color-white);
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid #414141; /* borda dourada */
+    background-color: var(--background-color-white);
     border-radius: 50%;
+    position: relative;
+    transition: background 0.2s, border 0.2s;
 }
-label.radio_label.align_top{
-	align-items:start;
-}
-/*
-label.radio_label span{
-	max-width: calc(100% - 40px);
-}
-*/
 label.radio_label input[type=radio]:checked {
-	background-color: var(--background-color-yellow);
+    background-color: var(--background-color-white); 
+    border: 2px solid #CDB060; 
+}
+label.radio_label input[type=radio]::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: background 0.2s;
 }
 label.radio_label input[type=radio]:checked::after {
-     content: '\2714'; /* Checkmark symbol */
-     color: var(--font-color-black);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     position: relative;
-     top: -3px;
+    background: #CDB060; /* círculo central dourado */
 }
-
+.input_group p {
+color: #414141;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 19.6px; /* 140% */
+letter-spacing: -0.28px;
+}
+.input_group li {
+color: #414141;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 19.6px; /* 140% */
+letter-spacing: -0.28px;
+}
+.input_group h5 {
+	color: var(--content-primary, #171717);
+/* Paragraph/semi/md */
+font-family: var(--typography-paragraph-fonts-semi-regular-light, Inter);
+font-size: var(--typography-paragraph-size-md, 16px);
+font-style: normal;
+font-weight: 600;
+line-height: var(--typography-paragraph-line-height-md, 22.4px); /* 140% */
+letter-spacing: var(--typography-paragraph-letter-spacing-md, -0.32px);
+}
+.white_text h6 {
+	color: var(--content-primary, #171717);
+/* Paragraph/semi/md */
+font-family: var(--typography-paragraph-fonts-semi-regular-light, Inter);
+font-size: var(--typography-paragraph-size-md, 16px);
+font-style: normal;
+font-weight: 600;
+line-height: var(--typography-paragraph-line-height-md, 22.4px); /* 140% */
+letter-spacing: var(--typography-paragraph-letter-spacing-md, -0.32px);
+}
 /**=================================================================
  * Modals
  =================================================================*/
@@ -418,17 +488,63 @@ header .languages .selection a img{
 .structure {
 	display:grid;
 	width:100%;
+	padding: 16px;
 	height:calc(100vh - 82px);
 	grid-template-columns: 400px 1fr;
 }
 .structure .sidebarLeft {
-	height: 100%;
-    overflow-y: auto;
-	border-right:var(--border-width-main) solid var(--border-color-lightgrey);
-	background:var(--background-color-lightgrey);
+	transition: width 0.3s, min-width 0.3s, max-width 0.3s;
+	width: 400px;
+	min-width: 400px;
+	max-width: 400px;
+	overflow-y: hidden !important;
+	border: 1px solid #BEBEBE;
+	background:#F9F7ED;
 }
 
+/* Permitir rolagem apenas no conteúdo do Step 1 da sidebar */
+.element_wrap[data-sidebar-type='step_1_instruction'] .input_group.information {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    max-height: calc(100vh - 180px); /* ajuste conforme necessário */
+    scrollbar-width: none; /* Firefox */
+    position: relative;
+}
+.element_wrap[data-sidebar-type='step_1_instruction'] .input_group.information::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+.element_wrap[data-sidebar-type='step_1_instruction'] .input_group.information::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 180px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(249,247,237,0) 0%, #F9F7ED 100%);
+    z-index: 2;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+.element_wrap[data-sidebar-type='step_1_instruction'] .input_group.information.at-bottom::after {
+    opacity: 0;
+}
+
+/* Remove scroll/fade effect from other steps */
+.element_wrap:not([data-sidebar-type='step_1_instruction']) .input_group.information {
+    overflow-y: visible !important;
+    max-height: none !important;
+    position: static !important;
+}
+.element_wrap:not([data-sidebar-type='step_1_instruction']) .input_group.information::after {
+    display: none !important;
+    content: none !important;
+}
+.element_wrap:not([data-sidebar-type='step_1_instruction']) .input_group.information::-webkit-scrollbar {
+    display: initial !important;
+}
 .structure .mainArea {
+	transition: width 0.3s, margin 0.3s;
 	height: 100%;
 	background:var(--background-color-neutral);
 }
@@ -450,14 +566,24 @@ header .languages .selection a img{
 	display:block;
 }
 .element_wrap .heading {
-	text-align:center;
-	padding:5px 0 5px;
+	text-align:left;
+	padding:20px 25px 5px;
 }
 .element_wrap .heading img {
-	height:60px;
+	height:24px;
 	margin-bottom:2px;
-	border-radius: 10px;
-	background: white;
+	
+
+}
+.heading p {
+color:  #171717;
+
+
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 120% */
+letter-spacing: .4px;
 }
 .element_wrap .heading p{
 	font-size: var(--font-size-body-large);
@@ -549,9 +675,7 @@ header .languages .selection a img{
 /**=================================================================
  * .element_wrap .mainWrap
  =================================================================*/
-.element_wrap .mainWrap {
-	padding:10px;
-}
+
 
 /**=================================================================
  * .element_wrap .mainWrap .area
@@ -559,6 +683,9 @@ header .languages .selection a img{
 .element_wrap .area {
 	display:none;
 	padding:10px 0;
+}
+.input_group {
+	padding: 5px 25px 5px;
 }
 .element_wrap .area.shown {
 	display:block;
@@ -588,8 +715,8 @@ header .languages .selection a img{
 	display:block;
 }
 .element_wrap .area .input_group .white_text{
-	padding: 20px;
-    background: var(--background-color-white);
+	
+ 
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -643,6 +770,12 @@ header .languages .selection a img{
 }
 .element_wrap .area .apply_button_wrap button {
 	float:right;
+}
+.button_wrap {
+	display: flex; 
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
 }
 .element_wrap .area .encapsulation_edit_wrap {
 	padding: 10px 8px;
@@ -938,24 +1071,38 @@ header .languages .selection a img{
 	margin:20px 0;
 }
 .app .appArea.step_info .intro p {
-	text-align:justify;
+	color:  #414141;
+text-align: center;
+/* Paragraph/regular/md */
+
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.4rem; /* 140% */
+letter-spacing:  -0.02rem;
 }
 .app .appArea.step_info h4 {
 	margin-bottom:30px;
 }
 .app .appArea.step_info .question {
 	margin-bottom:30px;
-	padding: 0 25%;
+	padding: 0 5%;
 }
 .app .appArea.step_info .question p {
 	margin-bottom:10px;
 }
 .app .appArea.step_info .question .choices {
 	display:flex;
-	justify-content:space-between;
+	
 	align-items:center;
-	max-width:370px;
+	
 	margin:0 auto;
+}
+.question h4, .question p {
+	text-align: left;
+}
+.choices .input_group {
+	padding-left: 0px;
 }
 @media (min-width:1200px) and (max-width:1399px){
 	.app .appArea.step_info .question {
@@ -1158,4 +1305,124 @@ header .languages .selection a img{
 .app .appArea.step_output .additional_notes p{
 	margin-bottom:20px;
 }
+.structure.sidebar-closed {
+	grid-template-columns: 0 1fr !important;
+}
+.structure .sidebarLeft {
+	transition: width 0.3s, min-width 0.3s, max-width 0.3s;
+	width: 400px;
+	min-width: 400px;
+	max-width: 400px;
+	overflow-y: hidden !important;
+	border: 1px solid #BEBEBE;
+	background:#F9F7ED;
+}
+.structure.sidebar-closed .sidebarLeft {
+	width: 0 !important;
+	min-width: 0 !important;
+	max-width: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	overflow: hidden !important;
+}
 
+/* Custom range slider color for Step 4 (dourado) */
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]::-webkit-slider-thumb {
+    background: #fff;
+    border: 3px solid #9A8142;
+    
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+    appearance: none;
+    margin-top: -8px; /* centraliza na track de 8px */
+    transition: box-shadow 0.2s;
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]:focus::-webkit-slider-thumb {
+    outline: none;
+   
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]::-moz-range-thumb {
+    background: #fff;
+    border: 3px solid #9A8142;
+    
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+    appearance: none;
+    transition: box-shadow 0.2s;
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]:focus::-moz-range-thumb {
+    outline: none;
+   
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]::-ms-thumb {
+    background: #fff;
+    border: 3px solid #CDB060;
+   
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+    appearance: none;
+    transition: box-shadow 0.2s;
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]:focus::-ms-thumb {
+    outline: none;
+    
+}
+/* Remove outline padrão do input */
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]:focus {
+    outline: none;
+}
+
+/* Step 4: Range background dinâmico dourado */
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range] {
+  --track-height: 8px;
+  --track-radius: 4px;
+  --track-fill: #b1975b;
+  --track-bg: #edeef1;
+  --percent: 50%;
+  height:27px;
+  background: transparent;
+  /* Chrome, Safari, Edge */
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]::-webkit-slider-runnable-track {
+  height: var(--track-height);
+  border-radius: var(--track-radius);
+  background: linear-gradient(
+    to right,
+    var(--track-fill) 0%,
+    var(--track-fill) var(--percent),
+    var(--track-bg) var(--percent),
+    var(--track-bg) 100%
+  );
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]::-moz-range-track {
+  height: var(--track-height);
+  border-radius: var(--track-radius);
+  background: linear-gradient(
+    to right,
+    var(--track-fill) 0%,
+    var(--track-fill) var(--percent),
+    var(--track-bg) var(--percent),
+    var(--track-bg) 100%
+  );
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]::-ms-fill-lower {
+  background: var(--track-fill);
+  border-radius: var(--track-radius) 0 0 var(--track-radius);
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range]::-ms-fill-upper {
+  background: var(--track-bg);
+  border-radius: 0 var(--track-radius) var(--track-radius) 0;
+}
+.element_wrap[data-sidebar-type='step_4_instruction'] input[type=range] {
+  /* Remove default background for IE/Edge */
+  background: transparent;
+}
+.flex-y {
+	display: flex;
+}

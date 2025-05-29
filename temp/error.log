@@ -1,0 +1,828 @@
+[26-May-2025 15:38:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 15:50:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 15:53:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 15:54:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 15:54:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 15:54:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 15:56:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 15:56:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 15:56:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:01:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:09:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:11:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:21:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:21:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:21:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:22:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:24:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:26:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 16:26:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 18:37:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:37:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:42:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:43:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:43:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:43:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:44:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:45:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:45:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:46:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:47:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:47:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:48:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:48:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:50:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:50:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:50:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:50:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:51:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:52:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 19:53:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:14:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:19:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:19:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:20:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:20:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:21:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:21:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:21:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:22:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:22:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:23:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:23:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:23:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:24:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:44:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:45:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[26-May-2025 22:46:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:02:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:38:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:40:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:41:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:42:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:42:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:42:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:42:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:47:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:49:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:50:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:52:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:53:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:53:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:54:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:55:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 13:55:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\mass_timber\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\mass_timber\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\mass_timber\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 15:36:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 16:45:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 21:46:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 21:47:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 21:47:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 21:49:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 21:49:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 21:50:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 21:50:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 21:50:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 21:54:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:14:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:46:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:49:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:50:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:51:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:52:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:52:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:52:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:52:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:53:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 22:53:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:16:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:16:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:17:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:18:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:22:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:23:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:30:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:31:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:31:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:32:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[27-May-2025 23:32:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 00:14:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 00:23:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 00:59:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 01:44:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 01:46:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 01:46:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 01:46:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 14:11:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 14:14:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 14:14:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 14:24:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 14:24:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php:330
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php on line 330
+[28-May-2025 18:32:11 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 12
+[28-May-2025 18:32:11 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 88
+[28-May-2025 18:32:11 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 121
+[28-May-2025 18:32:11 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 150
+[28-May-2025 18:32:11 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 197
+[28-May-2025 18:32:12 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 12
+[28-May-2025 18:32:12 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 88
+[28-May-2025 18:32:12 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 121
+[28-May-2025 18:32:12 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 150
+[28-May-2025 18:32:12 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 197
+[28-May-2025 18:33:51 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 12
+[28-May-2025 18:33:51 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 88
+[28-May-2025 18:33:51 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 121
+[28-May-2025 18:33:51 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 150
+[28-May-2025 18:33:51 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 197
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 12
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 88
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 121
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 150
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 197
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 12
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 88
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 121
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 150
+[28-May-2025 18:33:52 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 197
+[28-May-2025 18:33:55 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 12
+[28-May-2025 18:33:55 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 88
+[28-May-2025 18:33:55 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 121
+[28-May-2025 18:33:55 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 150
+[28-May-2025 18:33:55 Europe/Berlin] PHP Warning:  Undefined variable $step in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 197
+[28-May-2025 19:37:14 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 379
+[28-May-2025 19:37:25 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 379
+[28-May-2025 19:37:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 379
+[28-May-2025 19:37:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 379
+[28-May-2025 19:37:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 379
+[28-May-2025 19:37:29 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 379
+[29-May-2025 16:20:43 Europe/Berlin] PHP Parse error:  syntax error, unexpected identifier "http" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 193
+[29-May-2025 18:52:30 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 18:52:36 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 18:53:29 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 18:53:31 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 18:53:41 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 19:01:30 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 19:01:48 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 19:10:50 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 19:12:34 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 19:12:37 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[29-May-2025 19:12:59 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: File "C:/xampp/htdocs/EMCT/assets/files/Language_Translation.xlsx" does not exist. in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:146
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\EMCT\ajax.php(71): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
+#3 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
