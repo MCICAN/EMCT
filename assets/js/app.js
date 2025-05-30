@@ -97,5 +97,3 @@ function updateStep4RangeSliderFill(slider) {
   const percent = ((val - min) / (max - min)) * 100;
   slider.style.setProperty('--percent', percent + '%');
 }
-
-
