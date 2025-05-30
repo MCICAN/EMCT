@@ -112,10 +112,7 @@ export class OutcomeService {
             // Reset saved notes
             this.resetOutputNotes();
             
-            // Hide some if size rows initially
-            $("#if_size_beam_2_3_sided_tr").classList.add("hidden");
-            $("#if_size_beam_4_sided_tr").classList.add("hidden");
-            $("#if_size_wall_2_sided_tr").classList.add("hidden");
+           
             
             notes.forEach((note) => {
             	if(note.type == 'Additional_Warnings'){

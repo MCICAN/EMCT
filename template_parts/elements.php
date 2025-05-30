@@ -427,7 +427,7 @@
 			<?php if($step == 5){?>
 			<!-- Step 5 Instruction -->
 			<div class='input_group information shown'>
-				<p class='heading'>
+				<p class='heading calculationClass'>
 					The calculation results are shown, below. On the right side, you can see whether the suite you have constructed complies with the National Building Code.
 				</p>
 				<p>

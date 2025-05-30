@@ -40,6 +40,9 @@
 	</div>
 	
 	<div class="bottom_button_wrap">
+		<button class="secondary_button nav_previous" id="nav_previous" type="button" disabled>
+    &lt; <span data-language='navigation__previous' data-language-original="Previous">Previous</span>
+</button>
 		<button class='primary_button bottom_button' id='step2_3NextButton' disabled>
 			<span data-language='step_2__next_button' data-language-original="Next">Next</span> &#62;&#62;
 		</button>
