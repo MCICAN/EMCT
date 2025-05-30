@@ -121,7 +121,7 @@ line-height: 1.5rem; /* 120% */
 letter-spacing: -0.025rem;
 }
 .intro {
-	padding-bottom: 40px;
+	padding-bottom: 48px;
 }
 /**=================================================================
  * Spacing
@@ -155,12 +155,9 @@ letter-spacing: -0.025rem;
  * button
  =================================================================*/
 .flag_button {
-	width:132px;
-	padding: 6px 10px;
 	border: none;
 	border-radius: 8px;
-	background:var(--background-color-white);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	background-color: #9a8142;
 	font-weight:bold;
 	transition:all var(--time-button-movement) ease;
 }
@@ -169,7 +166,6 @@ letter-spacing: -0.025rem;
 	margin-right: 10px;
 }
 .flag_button:hover{
-	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 .primary_button {
@@ -180,13 +176,26 @@ letter-spacing: -0.025rem;
 	font-weight:bold;
 	transition:all var(--time-button-movement) ease;
 	user-select: none;
-	color: white;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
 	font-weight: 600;
+	line-height: 19.6px; /* 140% */
+	letter-spacing: -0.28px;
+}
+.primary_button.bottom_button {
+	font-size: 14px;
+	padding: 12px 24px;
 }
 .primary_button:hover{
 	background:#9A8142;
 	cursor: pointer;
 	
+}
+.primary_button:disabled,
+.primary_button[disabled] {
+	background: #BEBEBE;
+	cursor: not-allowed;
 }
 
 .secondary_button {
@@ -194,16 +203,28 @@ letter-spacing: -0.025rem;
 	border: none;
 	border-radius: 8px;
 	background:var(--background-color-white);
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 	font-weight:bold;
 	transition:all var(--time-button-movement) ease;
 	user-select: none;
 }
-.secondary_button:hover{
-	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-}
+
 .primary_button img {
 	width: 24px ;
+}
+.secondary_button.nav_previous {
+	display: flex;
+	padding: 12px 24px;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	border-radius: 2px;
+	background: #414141;
+	color: #fff;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 19.6px; /* 140% */
+	letter-spacing: -0.28px;
 }
 /**=================================================================
  * Measurement Inputs (in measurement_inputs.php, elements.php, step_info.php)
@@ -409,49 +430,52 @@ letter-spacing: var(--typography-paragraph-letter-spacing-md, -0.32px);
 /**=================================================================
  * header
  =================================================================*/
-header {
+
+.announcement-bar {
 	display:flex;
+	height: 32px;
 	justify-content:space-between;
-	padding:0px;
-	height: 82px;
+	padding:12px 16px;
+	background: #9A8142;
 	align-items: center;
 	border-bottom:var(--border-width-main) solid var(--border-color-lightgrey);
 }
-header .logo {
+.announcement-bar .logo {
 	display:flex;
 	align-items:center;
 }
-header .logo span {
-	font-size:40px;
-	font-weight:500;
-	color:var(--brand-color-grey);
-}
-header .logo img {
-	width:80px;
-	margin-right:20px;
-}
-header .right_group {
+.announcement-bar .right_group {
 	display:flex;
-	gap:20px;
 	align-items: center;
+	justify-content: flex-end;
+	gap: 20px;
+	flex: 1 1 auto;
 }
-header .right_group .info{
-	display:flex;
-	align-items:center;
-}
-header .languages {
+.announcement-bar .languages {
 	position:relative;
 }
-header .languages .flag_button {
-	margin-right:30px;
+.announcement-bar .languages .flag_button {
+	margin-right:0; /* Removido o margin-right para alinhar à direita */
 }
-header .languages .flag_button .language_label{
-	display:none;
+.announcement-bar .languages .flag_button .language_label {
+	display: none;
+	color: #FFF;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21.6px; /* 120% */
+	letter-spacing: 0px;
 }
-header .languages .flag_button .language_label.shown{
-	display:inline;
+.announcement-bar .languages .flag_button .language_label.shown {
+	display: inline;
+	color: #FFF;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21.6px; /* 120% */
+	letter-spacing: 0px;
 }
-header .languages .selection {
+.announcement-bar .languages .selection {
 	display:none;
 	position:absolute;
 	box-shadow: 0 0 4px grey;
@@ -459,27 +483,44 @@ header .languages .selection {
     background: white;
     width: 150px;
     right: 10px;
-    top: 45px;
+    top: 35px;
 	z-index: 100;
 }
-header .languages .selection.shown {
+.announcement-bar .languages .selection.shown {
 	display:block;
 }
-header .languages .selection a {
+.announcement-bar .languages .selection a {
 	display:block;
 	padding: 10px;
 }
-header .languages .selection a:hover {
+.announcement-bar .languages .selection a:hover {
 	background:var(--background-color-lightgrey);
 }
-header .languages .selection a img{
+.announcement-bar .languages .selection a img{
 	width:40px;
 	margin-right: 10px;
 }
 @media (max-width:1199px){
-	header .logo span {
+	.announcement-bar .logo span {
 		font-size:25px;
 	}
+}
+
+.main-menu {
+	height: 96px;
+	display: flex;
+	padding: 16px 64px;
+	justify-content: space-between;
+	align-items: center;
+	align-self: stretch;
+}
+
+.main-menu-items {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	align-self: end;
+	margin-right: 186px;
 }
 
 /**=================================================================
@@ -776,6 +817,9 @@ letter-spacing: .4px;
 	justify-content: flex-end;
 	align-items: center;
 	gap: 10px;
+	position: absolute;
+  	bottom: 48px;
+  	right: 48px;
 }
 .element_wrap .area .encapsulation_edit_wrap {
 	padding: 10px 8px;
@@ -844,7 +888,10 @@ letter-spacing: .4px;
 	padding: 16px;
 	position:relative;
 	background: var(--background-color-brightyellow);
-	border-bottom:var(--border-width-main) solid var(--border-color-lightgrey);
+	border-radius: 4px;
+	border-top: 1px solid #BEBEBE;
+	border-right: 1px solid #BEBEBE;
+	border-bottom: 1px solid #BEBEBE;
 }
 .navigation .steps {
     display: flex;
@@ -981,6 +1028,8 @@ letter-spacing: .4px;
  =================================================================*/
 .app {
 	position:relative;
+	border-right: 1px solid #BEBEBE;
+	border-bottom: 1px solid  #BEBEBE;
 }
 .app .appArea {
 	display:none;
@@ -1064,11 +1113,10 @@ letter-spacing: .4px;
  * .element_wrap .mainWrap .app .appArea.step_info (Step 1)
  =================================================================*/
 .app .appArea.step_info {
-	padding:30px 60px;
+	padding:48px;
 	text-align:center;
 }
 .app .appArea.step_info .intro {
-	margin:20px 0;
 }
 .app .appArea.step_info .intro p {
 	color:  #414141;
@@ -1082,7 +1130,7 @@ line-height: 1.4rem; /* 140% */
 letter-spacing:  -0.02rem;
 }
 .app .appArea.step_info h4 {
-	margin-bottom:30px;
+	margin-bottom:2px;
 }
 .app .appArea.step_info .question {
 	margin-bottom:30px;
@@ -1134,12 +1182,24 @@ letter-spacing:  -0.02rem;
 
 /* Centraliza e posiciona a área do botão Next */
 .bottom_button_wrap {
-	width: 90%;
+	width: auto;
 	position: absolute;
-	left: 0;
-	bottom: 20px;
+	left: 32px;
+	right: 32px;
+	bottom: 32px;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bottom_button_wrap .toolbar {
+	display: flex;
+	padding: 6px;
 	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	border-radius: 6px;
+	border: 1px solid #BEBEBE;
+	background: #FFF;
 }
 .app .appArea.step_2d canvas{
 	position:absolute;
@@ -1425,4 +1485,20 @@ letter-spacing:  -0.02rem;
 }
 .flex-y {
 	display: flex;
+}
+.primary_button_content {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+.menu-item span {
+	color: #2D2D2D;
+	text-align: center;
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22.4px; /* 140% */
+	letter-spacing: -0.32px;
+	cursor: pointer;
 }

@@ -14,7 +14,8 @@
 	
 	<div class='question'>
 		<h4 data-language='step_1__question_1' data-language-original="Is this a Suite or a Fire Compartment?">
-			Is this a Suite or a Fire Compartment as defined by the 2025 edition of the National Building Code of Canada (NBC)?
+			Is this a Suite or a Fire Compartment as defined by the 2025 edition of the National Building Code of Canada 
+			(NBC)?
 </h3>
 		<div class='choices'>
 			<div class='input_group'>
@@ -52,7 +53,7 @@
 	</div>
 	<div class='button_wrap'>
 		<button class='primary_button' id='step1NextButton' disabled>
-			<span data-language='step_1__next_button' data-language-original="Next">Next Step <img src="assets/images/arrow-right-line.png" /></span> 
+			<span class="primary_button_content" data-language='step_1__next_button' data-language-original="Next">Next Step <img src="assets/images/arrow-right-line.png" /></span> 
 		</button>
 	</div>
 </div>

@@ -97,39 +97,3 @@ function updateStep4RangeSliderFill(slider) {
   const percent = ((val - min) / (max - min)) * 100;
   slider.style.setProperty('--percent', percent + '%');
 }
-
-// Garante que apenas o sidebar do step correto tenha .shown
-function ensureOnlyCurrentStepSidebarIsShown() {
-  // Descobre o step atual pelo NavigationController, se disponível
-  let step = 1;
-  if (window.navigationController && window.navigationController.currentStep) {
-    step = window.navigationController.currentStep;
-  } else {
-    // fallback: tenta pelo appArea visível
-    const current = document.querySelector('.mainArea .app .appArea.shown');
-    if (current && current.id) {
-      if (current.id === 'stepInfoArea') step = 1;
-      if (current.id === 'step2DArea') step = 2;
-      if (current.id === 'step3DArea') step = 4;
-      if (current.id === 'stepOutputArea') step = 5;
-    }
-  }
-  // Remove .shown de todos
-  document.querySelectorAll('.element_wrap[data-sidebar-type$="_instruction"]').forEach(el => {
-    el.classList.remove('shown');
-  });
-  // Adiciona .shown só no step correto
-  const sidebar = document.querySelector(`.element_wrap[data-sidebar-type='step_${step}_instruction']`);
-  if (sidebar) sidebar.classList.add('shown');
-}
-
-// Observa mudanças de step (MutationObserver para .appArea.shown)
-function observeStepChangeForSidebar() {
-  const app = document.querySelector('.mainArea .app');
-  if (!app) return;
-  const observer = new MutationObserver(ensureOnlyCurrentStepSidebarIsShown);
-  app.querySelectorAll('.appArea').forEach(area => {
-    observer.observe(area, {attributes: true, attributeFilter: ['class']});
-  });
-}
-document.addEventListener('DOMContentLoaded', observeStepChangeForSidebar);
