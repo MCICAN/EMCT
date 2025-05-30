@@ -826,3 +826,13 @@ Stack trace:
 #2 C:\xampp\htdocs\EMCT\ajax.php(55): loadLanguage()
 #3 {main}
   thrown in C:\xampp\htdocs\EMCT\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 146
+[30-May-2025 16:23:25 Europe/Berlin] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\xampp\htdocs\EMCT\ajax.php:159
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(57): generateOutcome()
+#1 {main}
+  thrown in C:\xampp\htdocs\EMCT\ajax.php on line 159
+[30-May-2025 20:34:22 Europe/Berlin] DEBUG elements.php: $step = 1
+[30-May-2025 20:34:22 Europe/Berlin] DEBUG elements.php: $step = 2
+[30-May-2025 20:34:22 Europe/Berlin] DEBUG elements.php: $step = 3
+[30-May-2025 20:34:22 Europe/Berlin] DEBUG elements.php: $step = 4
+[30-May-2025 20:34:22 Europe/Berlin] DEBUG elements.php: $step = 5

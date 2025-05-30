@@ -47,30 +47,42 @@
 		<img src='assets/images/loader712.gif' alt='The page is loading' data-language-alt='alt__page_loading'/>
 	</div>
 	<header>
-		<div class='logo'>
-			<img src='assets/images/CWC_logo.png' alt='CWC logo' data-language-alt='alt__cwc_logo'/> 
-			<span>
-				<span data-language='header__page_title' data-language-original="Exposed Mass Timber Calculator">Exposed Mass Timber Calculator</span>
-			</span>
-		</div>
-		<div class='right_group'>
-			<div class='info'>
-				<p>
-					<a href='#' data-modal-about='true'>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-							<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-						</svg> 
-						<span data-language='header__about_mass_timber_calculator' data-language-original="About Exposed Mass Timber Calculator">About Exposed Mass Timber Calculator</span>
-					</a>
-				</p>
+		<div class="announcement-bar">
+			<div class="logo">
+				<!-- Adicione aqui o logo se houver -->
 			</div>
-			<div class='languages'>
-				<button class='flag_button' id='openLanguageSelection'>
-					<span class='language_label shown' id='language_english_label'>
-						<img src='assets/images/English_flag.png' alt='English flag' data-language-alt='alt__english_flag'/> English
+			<div class="right_group">
+				<div class="languages">
+					<button class='flag_button' id='openLanguageSelection'>
+						<span class='language_label shown' id='language_english_label'>
+							<!-- SVG Bandeira Canadá -->
+							<svg style="margin-bottom:3px;" width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_5526_17251)">
+								<path d="M0 0H8L8.33 0.33H23.67L24 0H32V16H24L23.67 15.67H8.33L8 16H0V0Z" fill="#FF0000"/>
+								<path d="M8 0H24V16H8V0ZM16.3 14.7667L16.15 11.89C16.1478 11.8427 16.1563 11.7955 16.1748 11.7519C16.1932 11.7083 16.2212 11.6694 16.2567 11.638C16.2922 11.6067 16.3343 11.5837 16.3799 11.5708C16.4254 11.5579 16.4733 11.5553 16.52 11.5633L19.3833 12.0667L18.9967 11C18.981 10.9576 18.979 10.9113 18.9909 10.8676C19.0029 10.824 19.0282 10.7852 19.0633 10.7567L22.2 8.21667L21.4933 7.88667C21.4456 7.86411 21.4078 7.82491 21.3869 7.77642C21.366 7.72794 21.3636 7.6735 21.38 7.62333L22 5.71667L20.1933 6.1C20.1444 6.11021 20.0934 6.10317 20.0491 6.08008C20.0047 6.057 19.9697 6.01928 19.95 5.97333L19.6 5.15L18.19 6.66333C18.1578 6.69734 18.1154 6.71998 18.0692 6.72785C18.023 6.73572 17.9755 6.72841 17.9338 6.707C17.8921 6.6856 17.8585 6.65125 17.838 6.60913C17.8175 6.567 17.8111 6.51935 17.82 6.47333L18.5 2.96667L17.41 3.59667C17.3844 3.61167 17.356 3.62125 17.3266 3.62483C17.2971 3.6284 17.2673 3.62589 17.2388 3.61746C17.2104 3.60902 17.184 3.59483 17.1612 3.57577C17.1385 3.55672 17.1199 3.5332 17.1067 3.50667L16 1.33333L14.8933 3.50667C14.8801 3.5332 14.8615 3.55672 14.8388 3.57577C14.816 3.59483 14.7896 3.60902 14.7612 3.61746C14.7327 3.62589 14.7029 3.6284 14.6734 3.62483C14.644 3.62125 14.6156 3.61167 14.59 3.59667L13.5 2.96667L14.18 6.47333C14.1889 6.51935 14.1825 6.567 14.162 6.60913C14.1415 6.65125 14.1079 6.6856 14.0662 6.707C14.0245 6.72841 13.977 6.73572 13.9308 6.72785C13.8846 6.71998 13.8422 6.69734 13.81 6.66333L12.4 5.15L12.05 5.97333C12.0303 6.01928 11.9953 6.057 11.9509 6.08008C11.9066 6.10317 11.8556 6.11021 11.8067 6.1L10 5.71667L10.62 7.62333C10.6364 7.6735 10.634 7.72794 10.6131 7.77642C10.5922 7.82491 10.5544 7.86411 10.5067 7.88667L9.8 8.21667L12.9367 10.7567C12.9718 10.7852 12.9971 10.824 13.0091 10.8676C13.021 10.9113 13.019 10.9576 13.0033 11L12.6167 12.0667L15.48 11.5633C15.5267 11.5553 15.5746 11.5579 15.6201 11.5708C15.6657 11.5837 15.7078 11.6067 15.7433 11.638C15.7788 11.6694 15.8068 11.7083 15.8252 11.7519C15.8437 11.7955 15.8522 11.8427 15.85 11.89L15.7 14.7667H16.3Z" fill="white"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_5526_17251">
+									<rect width="32" height="16" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+						English
 					</span>
 					<span class='language_label' id='language_french_label'>
-						<img src='assets/images/French_flag.png' alt='French flag' data-language-alt='alt__french_flag'/> Français
+						<!-- SVG Bandeira Canadá -->
+						<svg style="margin-bottom:3px;" width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_5526_17251)">
+								<path d="M0 0H8L8.33 0.33H23.67L24 0H32V16H24L23.67 15.67H8.33L8 16H0V0Z" fill="#FF0000"/>
+								<path d="M8 0H24V16H8V0ZM16.3 14.7667L16.15 11.89C16.1478 11.8427 16.1563 11.7955 16.1748 11.7519C16.1932 11.7083 16.2212 11.6694 16.2567 11.638C16.2922 11.6067 16.3343 11.5837 16.3799 11.5708C16.4254 11.5579 16.4733 11.5553 16.52 11.5633L19.3833 12.0667L18.9967 11C18.981 10.9576 18.979 10.9113 18.9909 10.8676C19.0029 10.824 19.0282 10.7852 19.0633 10.7567L22.2 8.21667L21.4933 7.88667C21.4456 7.86411 21.4078 7.82491 21.3869 7.77642C21.366 7.72794 21.3636 7.6735 21.38 7.62333L22 5.71667L20.1933 6.1C20.1444 6.11021 20.0934 6.10317 20.0491 6.08008C20.0047 6.057 19.9697 6.01928 19.95 5.97333L19.6 5.15L18.19 6.66333C18.1578 6.69734 18.1154 6.71998 18.0692 6.72785C18.023 6.73572 17.9755 6.72841 17.9338 6.707C17.8921 6.6856 17.8585 6.65125 17.838 6.60913C17.8175 6.567 17.8111 6.51935 17.82 6.47333L18.5 2.96667L17.41 3.59667C17.3844 3.61167 17.356 3.62125 17.3266 3.62483C17.2971 3.6284 17.2673 3.62589 17.2388 3.61746C17.2104 3.60902 17.184 3.59483 17.1612 3.57577C17.1385 3.55672 17.1199 3.5332 17.1067 3.50667L16 1.33333L14.8933 3.50667C14.8801 3.5332 14.8615 3.55672 14.8388 3.57577C14.816 3.59483 14.7896 3.60902 14.7612 3.61746C14.7327 3.62589 14.7029 3.6284 14.6734 3.62483C14.644 3.62125 14.6156 3.61167 14.59 3.59667L13.5 2.96667L14.18 6.47333C14.1889 6.51935 14.1825 6.567 14.162 6.60913C14.1415 6.65125 14.1079 6.6856 14.0662 6.707C14.0245 6.72841 13.977 6.73572 13.9308 6.72785C13.8846 6.71998 13.8422 6.69734 13.81 6.66333L12.4 5.15L12.05 5.97333C12.0303 6.01928 11.9953 6.057 11.9509 6.08008C11.9066 6.10317 11.8556 6.11021 11.8067 6.1L10 5.71667L10.62 7.62333C10.6364 7.6735 10.634 7.72794 10.6131 7.77642C10.5922 7.82491 10.5544 7.86411 10.5067 7.88667L9.8 8.21667L12.9367 10.7567C12.9718 10.7852 12.9971 10.824 13.0091 10.8676C13.021 10.9113 13.019 10.9576 13.0033 11L12.6167 12.0667L15.48 11.5633C15.5267 11.5553 15.5746 11.5579 15.6201 11.5708C15.6657 11.5837 15.7078 11.6067 15.7433 11.638C15.7788 11.6694 15.8068 11.7083 15.8252 11.7519C15.8437 11.7955 15.8522 11.8427 15.85 11.89L15.7 14.7667H16.3Z" fill="white"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_5526_17251">
+									<rect width="32" height="16" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+						Français
 					</span>
 				</button>
 				<div class='selection' id='languageSelectionPanel'>
@@ -83,6 +95,44 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="main-menu">
+		<img src="assets/images/logo-cwc-header.svg" alt="CWC Logo" style="height:64px;">
+		<div class="main-menu-items">
+		<div class="menu-item">
+			<span>Resources</span>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
+			</svg>
+		</div>
+		<div class="menu-item">
+			<span>Building with Wood</span>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
+			</svg>
+		</div>
+		<div class="menu-item">
+			<span>Publications</span>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
+			</svg>
+		</div>
+		<div class="menu-item">
+			<span>Events</span>
+		</div>
+		<div class="menu-item">
+			<span>About Us</span>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
+			</svg>
+		</div>
+		<div class="menu-item">
+			<span>Contact</span>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
+			</svg>
+		</div>
+	</div>
 	</header>
 	<section class='structure'>
 	

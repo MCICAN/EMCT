@@ -45,38 +45,38 @@ export class NavigationController {
 		const self = this;
 		
 		// Previous button
-		// $("#nav_previous").addEventListener("click", () => {
-		// 	const requested_step = self.currentStep - 1;
-		// 	if(self.currentStep != requested_step && (requested_step >= 1 || requested_step <= self.maxAllowedStep)){
-		// 		self.requestStep(requested_step);
-		// 	}
-		// });
+		$("#nav_previous").addEventListener("click", () => {
+			const requested_step = self.currentStep - 1;
+			if(self.currentStep != requested_step && (requested_step >= 1 || requested_step <= self.maxAllowedStep)){
+				self.requestStep(requested_step);
+			}
+		});
 		
 		// Next button
-		// $("#nav_next").addEventListener("click", () => {
-		// 	// Go from step 1 to step 2 for the first time
-		// 	if(self.currentStep == 1 && self.maxAllowedStep == 1){
-		// 		self.goFromStep1ToStep2();
-		// 		return;
-		// 	}
+		$("#nav_next").addEventListener("click", () => {
+			// Go from step 1 to step 2 for the first time
+			if(self.currentStep == 1 && self.maxAllowedStep == 1){
+				self.goFromStep1ToStep2();
+				return;
+			}
 			
-		// 	// Go from step 2 to step 3 for the first time
-		// 	if(self.currentStep == 2 && self.maxAllowedStep == 2){
-		// 		self.goFromStep2ToStep3();
-		// 		return;
-		// 	}
+			// Go from step 2 to step 3 for the first time
+			if(self.currentStep == 2 && self.maxAllowedStep == 2){
+				self.goFromStep2ToStep3();
+				return;
+			}
 			
-		// 	// Go from step 4 to step 5 for the first time
-		// 	if(self.maxAllowedStep == 4){
-		// 		self.goFromStep4ToStep5();
-		// 		return;
-		// 	}
+			// Go from step 4 to step 5 for the first time
+			if(self.maxAllowedStep == 4){
+				self.goFromStep4ToStep5();
+				return;
+			}
 			
-		// 	const requested_step = self.currentStep + 1;
-		// 	if(self.currentStep != requested_step && (requested_step >= 1 || requested_step <= self.maxAllowedStep)){
-		// 		self.requestStep(requested_step);
-		// 	}
-		// });
+			const requested_step = self.currentStep + 1;
+			if(self.currentStep != requested_step && (requested_step >= 1 || requested_step <= self.maxAllowedStep)){
+				self.requestStep(requested_step);
+			}
+		});
 		
 		// Step links
 		all("[data-navigation-step-link]").forEach((el) => {
@@ -160,31 +160,31 @@ export class NavigationController {
 	enableNextStepButton(for_which_step){
 		if(for_which_step == 2){
 			$("#step1NextButton").disabled = false;
-			// $("#nav_next").disabled = false;
+			$("#nav_next").disabled = false;
 		}
 		if(for_which_step == 3){
 			$("#step2_3NextButton").disabled = false;
-			// $("#nav_next").disabled = false;
+			$("#nav_next").disabled = false;
 		}
 		if(for_which_step == 4){
 			$("#step2_3NextButton").disabled = false;
-			// $("#nav_next").disabled = false;
+			$("#nav_next").disabled = false;
 		}
 	}
 	
 	disableNextStepButton(for_which_step){
 		if(for_which_step == 2){
 			$("#step1NextButton").disabled = true;
-			// $("#nav_next").disabled = true;
+			$("#nav_next").disabled = true;
 		}
 		if(for_which_step == 3){
 			$("#step2_3NextButton").disabled = true;
-			// $("#nav_next").disabled = true;
+			$("#nav_next").disabled = true;
 			
 		}
 		if(for_which_step == 4){
 			$("#step2_3NextButton").disabled = true;
-			// $("#nav_next").disabled = true;
+			$("#nav_next").disabled = true;
 		}
 	}
 	
@@ -283,21 +283,27 @@ export class NavigationController {
 		if(this.currentStep <= this.maxAllowedStep){
 			$("[data-navigation-step='"+this.currentStep+"']").classList.add("active");
 			
-			// // Adjust previous button
-			// if(this.currentStep > 1){
-			// 	$("#nav_previous").disabled = false;
-			// }else{
-			// 	$("#nav_previous").disabled = true;
-			// }
+			// Adjust previous button
+			if(this.currentStep > 1){
+				$("#nav_previous").disabled = false;
+			}else{
+				$("#nav_previous").disabled = true;
+			}
 			
 			// Adjust next button
-			// if(this.currentStep < this.maxAllowedStep){
-			// 	$("#nav_next").disabled = false;
-			// }else{
-			// 	$("#nav_next").disabled = true;
-			// }
+			if(this.currentStep < this.maxAllowedStep){
+				$("#nav_next").disabled = false;
+			}else{
+				$("#nav_next").disabled = true;
+			}
 		}
-		
+
+		// Sempre esconder o botão nav_next visualmente, mas manter no DOM
+		const navNextBtn = $("#nav_next");
+		if (navNextBtn) {
+			navNextBtn.classList.add("hidden");
+		}
+
 		// Show the right main app area
 		if(this.currentStep == 1){
 			$("#stepInfoArea").classList.add("shown");
