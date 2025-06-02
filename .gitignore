@@ -1,1 +1,3 @@
-temp/
+temp/assets/configurations/config.js
+assets/configurations/config.js
+common/config.inc.php
