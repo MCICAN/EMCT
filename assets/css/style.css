@@ -1272,17 +1272,36 @@ letter-spacing:  -0.02rem;
 	overflow-x:hidden;
 }
 .app .appArea.step_3d .bottom_buttons {
-	position:absolute;
-	bottom:20px;
-	left: calc(50% - 115px);
-	display:grid;
-	grid-template-columns:1fr 1fr;
-	gap: 0 20px;
+	width: auto;
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 32px;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
 }
 .app .appArea.step_3d .bottom_button {
 	user-select: none;
 	
 }
+#step4PreviousButton {
+display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 2px;
+    background: #414141;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.6px;
+    letter-spacing: -0.28px;
+}
+
 
 /**=================================================================
  * .element_wrap .mainWrap .app .appArea.step_output (Step 5)
@@ -1795,7 +1814,8 @@ tr:not(.hidden):nth-child(even) {
 
 .menu-toggle:hover  {
     transform: scale(1.08);
-
+	
+}
 
 /* Estilização específica para o texto do botão Help na toolbar */
 .toolbar [data-language='step_2__help_button'] {
@@ -1808,4 +1828,7 @@ tr:not(.hidden):nth-child(even) {
     line-height: 19.6px;
     letter-spacing: -0.28px;
 
+}
+.element_wrap .buttons_wrap li.third:disabled {
+    display: none;
 }
