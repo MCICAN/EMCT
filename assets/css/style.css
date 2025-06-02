@@ -1051,15 +1051,29 @@ letter-spacing: .4px;
 .app .hint p {
 	user-select: none;
 }
-.app .buttons_wrap {
-	position: absolute;
-    left: 10px;
-    top: 10px;
+.app .buttons_wrap {    
+    position: absolute;
+    left: 32px;
+    top: 32px;
     width: auto;
     text-align: left;
-    
-    gap: 10px;
     user-select: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+/* Ajuste para os botões ficarem menores e alinhados horizontalmente */
+
+.floating_button {
+    border-radius: 6px;
+    border: 1px solid #BEBEBE;
+    background: #FFF;
+}
+
+.app .buttons_wrap .floating_button {
+	margin-bottom: 0;
+	padding: 8px;
 }
 .floating_button {
 border-radius: 6px;
@@ -1121,18 +1135,7 @@ letter-spacing: -0.28px;
 		padding:20px 20px;
 	}
 }
-@media (max-height:750px){
-	.app .buttons_wrap .floating_button {
-		width:100px;
-		font-weight:normal;
-	}
-	.app .buttons_wrap .floating_button img {
-		display:none;
-	}
-	.app .buttons_wrap .floating_button svg{
-		display:none;
-	}
-}
+
 /**=================================================================
  * .element_wrap .mainWrap .app .appArea.step_info (Step 1)
  =================================================================*/
@@ -1573,7 +1576,7 @@ font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height:  28.8px; /* 120% */
-letter-spacing:  -0.48px;
+letter-spacing: -0.48px;
 }
 .alert-body ul li {
 color: #33230E;
@@ -1777,6 +1780,7 @@ tr:not(.hidden):nth-child(even) {
 	letter-spacing: -0.32px;
 	cursor: pointer;
 }
+
 .menu-toggle {
     position: absolute;
     left: 3px;
@@ -1791,4 +1795,17 @@ tr:not(.hidden):nth-child(even) {
 
 .menu-toggle:hover  {
     transform: scale(1.08);
+
+
+/* Estilização específica para o texto do botão Help na toolbar */
+.toolbar [data-language='step_2__help_button'] {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.6px;
+    letter-spacing: -0.28px;
+
 }

@@ -535,6 +535,16 @@ export class NavigationController {
 			}
 		});
 		
+		// Hide .hint when currentStep == 3, show otherwise
+		const hintEl = $("#step2DArea .hint");
+		if (hintEl) {
+			if (this.currentStep === 3) {
+				hintEl.classList.add("hidden");
+			} else {
+				hintEl.classList.remove("hidden");
+			}
+		}
+		
 		this.resetAllSuiteRendererParameters();
 		this.suiteRenderer.draw();
 	}
