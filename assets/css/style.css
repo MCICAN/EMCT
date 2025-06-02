@@ -1336,16 +1336,34 @@ label.radio_label input[type="radio"]:checked::after {
   overflow-x: hidden;
 }
 .app .appArea.step_3d .bottom_buttons {
+
   position: absolute;
   bottom: 20px;
   left: calc(50% - 115px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 20px;
+
 }
 .app .appArea.step_3d .bottom_button {
   user-select: none;
 }
+#step4PreviousButton {
+display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 2px;
+    background: #414141;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.6px;
+    letter-spacing: -0.28px;
+}
+
 
 /**=================================================================
  * .element_wrap .mainWrap .app .appArea.step_output (Step 5)
@@ -1860,8 +1878,10 @@ tr:not(.hidden):nth-child(even) {
   transition: transform 0.35s cubic-bezier(0.4, 1.5, 0.6, 1);
 }
 
+
 .menu-toggle:hover {
   transform: scale(1.08);
+
 
   /* Estilização específica para o texto do botão Help na toolbar */
   .toolbar [data-language="step_2__help_button"] {
@@ -1900,13 +1920,13 @@ tr:not(.hidden):nth-child(even) {
   min-width: 0;
   padding: 6px 16px;
 }
+
 @media (max-width: 1199px) {
   .element_wrap .buttons_wrap {
     flex-wrap: wrap;
     gap: 0.25rem;
   }
 }
-
 .p-headtools {
 color: var(--shared-colors-neutral-700, #2D2D2D) !important;
 font-size: var(--typography-paragraph-size-lg, 18px) !important;
@@ -1938,3 +1958,4 @@ letter-spacing: var(--typography-paragraph-letter-spacing-lg, -0.36px);
   line-height: var(--typography-paragraph-line-height-xs, 16.8px);
   letter-spacing: var(--typography-paragraph-letter-spacing-xs, -0.24px);
 }
+
