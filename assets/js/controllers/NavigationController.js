@@ -506,8 +506,8 @@ export class NavigationController {
 //	        }
 //	        $("#page_loader").classList.add("hidden");
 		}
-		// Hide .hint when currentStep == 3, show otherwise
-        
+
+
 		
 		// Atualiza os ícones dos steps (SVGs)
 		all("[data-navigation-step]").forEach((el) => {
