@@ -11,22 +11,35 @@
 	
 	<div class='buttons_wrap'>
 		<button class='secondary_button floating_button hidden' data-canvas-ceiling-button='true'>
-			<img src='<?php echo BASE_URL;?>/assets/images/2_1_ceiling.jpg' alt='Ceiling icon' data-language-alt='alt__icon_for_ceiling'/>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M7.33333 13.9999V8.27597L5.80468 9.80461C5.54433 10.065 5.12232 10.065 4.86197 9.80461C4.60162 9.54426 4.60162 9.12226 4.86197 8.86191L7.52864 6.19524L7.57942 6.14967C7.84127 5.9361 8.22727 5.95116 8.47135 6.19524L11.138 8.86191L11.1836 8.91269C11.3972 9.17454 11.3821 9.56054 11.138 9.80461C10.8939 10.0487 10.5079 10.0638 10.2461 9.85019L10.1953 9.80461L8.66666 8.27597V13.9999C8.66666 14.3681 8.36818 14.6666 7.99999 14.6666C7.63181 14.6666 7.33333 14.3681 7.33333 13.9999Z" fill="#2D2D2D"/>
+<path d="M7.74609 0.716723C7.9357 0.638605 8.15287 0.651622 8.33333 0.755786L13.6667 3.83521L13.7585 3.89901C13.9566 4.06296 14.0455 4.33031 13.9772 4.58521C13.899 4.87656 13.635 5.07935 13.3333 5.07935H2.66666C2.36499 5.07935 2.10094 4.87656 2.02278 4.58521C1.94469 4.29377 2.07204 3.98609 2.33333 3.83521L7.66666 0.755786L7.74609 0.716723ZM5.15429 3.74602H10.8457L7.99999 2.10279L5.15429 3.74602Z" fill="#2D2D2D"/>
+</svg>
 			<span data-language='step_2__ceiling_button' data-language-original="Ceiling">Ceiling</span>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M7.33325 7.33334V3.33334H8.66659V7.33334H12.6666V8.66668H8.66659V12.6667H7.33325V8.66668H3.33325V7.33334H7.33325Z" fill="#2D2D2D"/>
+</svg>
 		</button>
 		<button class='secondary_button floating_button hidden' data-canvas-suite-button='true'>
-			<img src='<?php echo BASE_URL;?>/assets/images/suite.png' alt='Suite with a plus sign' data-language-alt='alt__icon_for_plus_sign'/>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M7.33325 7.33334V3.33334H8.66659V7.33334H12.6666V8.66668H8.66659V12.6667H7.33325V8.66668H3.33325V7.33334H7.33325Z" fill="#2D2D2D"/>
+</svg>
 			<span data-language='step_2__add_object_button' data-language-original="Add Object">Add Object</span>
 		</button>
 		<button class='secondary_button floating_button hidden' data-canvas-list-object-button='true'>
-			<img src='<?php echo BASE_URL;?>/assets/images/object_list_icon.png' alt='An icon of a list' data-language-alt='alt__icon_for_list_of_object'/>
-			<span data-language='step_2__list_object_button' data-language-original="List Objects">List Objects</span>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M5.33333 2.66668H14V4.00001H5.33333V2.66668ZM2 2.33334H4V4.33334H2V2.33334ZM2 7.00001H4V9.00001H2V7.00001ZM2 11.6667H4V13.6667H2V11.6667ZM5.33333 7.33334H14V8.66668H5.33333V7.33334ZM5.33333 12H14V13.3333H5.33333V12Z" fill="#2D2D2D"/>
+</svg>
+			<span data-language='step_2__list_object_button' data-language-original=" Objects List ">Objects List </span>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M7.33325 7.33334V3.33334H8.66659V7.33334H12.6666V8.66668H8.66659V12.6667H7.33325V8.66668H3.33325V7.33334H7.33325Z" fill="#2D2D2D"/>
+</svg>
 		</button>
-		<button class='secondary_button floating_button hidden' data-canvas-3d-button='true'>
+		<button class='secondary_button floating_button hidden' data-canvas-3d-button='true' style="display: none;">
 			<img src='<?php echo BASE_URL;?>/assets/images/2_1_3d.png' alt='3D icon' data-language-alt='alt__icon_for_3d'/>
 			<span data-language='step_2__3d_render_button' data-language-original="3D Render">3D Render</span>
-		</button>
-		<button class='secondary_button floating_button hidden' data-canvas-showID-button='true'>
+		</button> 
+		<button class='secondary_button floating_button hidden' data-canvas-showID-button='true' style='display: none;'>
 			<img src='<?php echo BASE_URL;?>/assets/images/id_icon.png' alt='an ID' data-language-alt='alt__icon_for_id_button'/>
 			<span data-language='step_2__show_id_button' data-language-original="3D Render">Show IDs</span>
 		</button>
