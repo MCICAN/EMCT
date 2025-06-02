@@ -1,4 +1,4 @@
-import * as config from "./configurations/config.js?v=20250503";
+import * as config from "./configurations/config.js";
 import { Suite } from "./models/Suite.js?v=20250503";
 import { SuiteRenderer } from "./services/SuiteRenderer.js?v=20250503";
 import { ThreeDRenderer } from "./services/ThreeDRenderer.js?v=20250503";
@@ -46,18 +46,31 @@ window.addEventListener("load", () => {
 document.addEventListener('DOMContentLoaded', function() {
   // Sidebar close/open logic
   var structure = document.querySelector('.structure');
+  var menuToggle = document.querySelector('.menu-toggle');
 
-  // Botão para toggle (abre/fecha) sidebar
+  function updateMenuToggleVisibility() {
+    if (structure.classList.contains('sidebar-closed')) {
+      menuToggle.style.display = 'block';
+    } else {
+      menuToggle.style.display = 'none';
+    }
+  }
+
+  // Atualiza a visibilidade do menu toggle ao carregar a página
+  updateMenuToggleVisibility();
+
   document.body.addEventListener('click', function(e) {
     var toggleBtn = e.target.closest('[data-sidebar-toggle]');
     if (toggleBtn && structure) {
       e.preventDefault();
       structure.classList.toggle('sidebar-closed');
+      updateMenuToggleVisibility();
     }
     var closeBtnInside = e.target.closest('.sidebar-close-btn-inside');
     if (closeBtnInside && structure) {
       e.preventDefault();
       structure.classList.add('sidebar-closed');
+      updateMenuToggleVisibility();
     }
   });
 

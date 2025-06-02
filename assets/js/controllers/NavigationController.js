@@ -506,6 +506,15 @@ export class NavigationController {
 //	        }
 //	        $("#page_loader").classList.add("hidden");
 		}
+		// Hide .hint when currentStep == 3, show otherwise
+        const hintEl = $("#step2DArea .hint");
+        if (hintEl) {
+            if (this.currentStep === 3) {
+                hintEl.classList.add("hidden");
+            } else {
+                hintEl.classList.remove("hidden");
+            }
+        }
 		
 		// Atualiza os ícones dos steps (SVGs)
 		all("[data-navigation-step]").forEach((el) => {
@@ -529,6 +538,7 @@ export class NavigationController {
 		this.resetAllSuiteRendererParameters();
 		this.suiteRenderer.draw();
 	}
+	
 	
 	resetAllSuiteRendererParameters(except = []){
 		this.suiteRenderer.perimeterWallEndCircleSelectedCoordinatesToCreateAnotherWall = {x: -1, y: -1};

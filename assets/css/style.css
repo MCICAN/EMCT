@@ -151,6 +151,12 @@ letter-spacing: -0.025rem;
 .step_info {
 	background-color: #f8f8f8;
 }
+.sidebarLeft {
+	border-right: none !important;
+}
+.appArea .step_2d .shown {
+	background-color: #f8f8f8;
+}
 /**=================================================================
  * button
  =================================================================*/
@@ -226,7 +232,8 @@ letter-spacing: -0.025rem;
 	line-height: 19.6px; /* 140% */
 	letter-spacing: -0.28px;
 }
-/**=================================================================
+
+ /**=================================================================
  * Measurement Inputs (in measurement_inputs.php, elements.php, step_info.php)
  =================================================================*/
 input.unit_input_cm,
@@ -886,8 +893,7 @@ letter-spacing: .4px;
 	position:relative;
 	background: var(--background-color-brightyellow);
 	border-radius: 4px;
-	border-top: 1px solid #BEBEBE;
-	border-right: 1px solid #BEBEBE;
+	
 	border-bottom: 1px solid #BEBEBE;
 }
 .navigation .steps {
@@ -1025,8 +1031,10 @@ letter-spacing: .4px;
  =================================================================*/
 .app {
 	position:relative;
-	border-right: 1px solid #BEBEBE;
-	border-bottom: 1px solid  #BEBEBE;
+	
+}
+.mainArea {
+	border: 1px solid #BEBEBE;
 }
 .app .appArea {
 	display:none;
@@ -1045,19 +1053,38 @@ letter-spacing: .4px;
 }
 .app .buttons_wrap {
 	position: absolute;
-    right: 10px;
+    left: 10px;
     top: 10px;
-    width: 140px;
-    text-align: center;
+    width: auto;
+    text-align: left;
+    
+    gap: 10px;
     user-select: none;
 }
+.floating_button {
+border-radius: 6px;
+border: 1px solid  #BEBEBE;
+background: #f8f8f8;
+}
+.floating_button span {
+	color:  #2D2D2D;
+/* Paragraph/semi/sm */
+font-family: 'Inter';
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 19.6px; /* 140% */
+letter-spacing: -0.28px;
+}
 .app .buttons_wrap .floating_button {
-	margin-bottom:20px;
-	padding-right:10px;
-	padding-left:10px;
+	margin-bottom: 0;
+    padding: 10px;
 }
 .app .buttons_wrap .floating_button.active {
-	background: var(--background-color-yellow);
+	
+}
+.noneBlock {
+	display: none !important;
 }
 .app .buttons_wrap .floating_button img{
 	width:80px;
@@ -1164,7 +1191,7 @@ letter-spacing:  -0.02rem;
  * .element_wrap .mainWrap .app .appArea.step_2d (Step 2-3)
  =================================================================*/
 .app .appArea.step_2d {
-	background: var(--background-color-white);
+	background: #F8F8F8;
 	overflow-y:hidden;
 	overflow-x:hidden;
 	position: relative;
@@ -1368,6 +1395,7 @@ letter-spacing:  -0.02rem;
 .structure.sidebar-closed {
 	grid-template-columns: 0 1fr !important;
 }
+
 .structure .sidebarLeft {
 	transition: width 0.3s, min-width 0.3s, max-width 0.3s;
 	width: 400px;
@@ -1748,4 +1776,19 @@ tr:not(.hidden):nth-child(even) {
 	line-height: 22.4px; /* 140% */
 	letter-spacing: -0.32px;
 	cursor: pointer;
+}
+.menu-toggle {
+    position: absolute;
+    left: 3px;
+	z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+	border: 1px solid  #757575 !important;
+}
+.menu-toggle  {
+    transition: transform 0.35s cubic-bezier(.4,1.5,.6,1);
+}
+
+.menu-toggle:hover  {
+    transform: scale(1.08);
 }

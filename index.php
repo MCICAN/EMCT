@@ -135,32 +135,33 @@
 	</div>
 	</header>
 	<section class='structure'>
-	
-		<!-- Sidebar Left for Element Edit -->
-		<div class='sidebarLeft' id='sidebarLeft'>
-			<?php include(BASE_PATH . "/template_parts/elements.php");?>
-		</div>
-		
-		<!-- Main Area Right -->
-		<div class='mainArea'>
-			
-			<!-- Navigation -->
-			<div class='navigation' id='navigation'>
-				<?php include(BASE_PATH . "/template_parts/navigation.php");?>
-			</div>
-			
-			<!-- App Area -->
-			<div class='app'>
-				<!-- Steps -->
-				<?php include(BASE_PATH . "/template_parts/step_info.php");?>
-				<?php include(BASE_PATH . "/template_parts/step_2d.php");?>
-				<?php include(BASE_PATH . "/template_parts/step_3d.php");?>
-				<?php include(BASE_PATH . "/template_parts/step_output.php");?>
-				
-			</div>
-			
-		</div>
-	</section>
+    <button class="menu-toggle" data-sidebar-toggle>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M21 18V20H3V18H21ZM6.95 3.55V13.45L2 8.5L6.95 3.55ZM21 11V13H12V11H21ZM21 4V6H12V4H21Z" fill="#757575"></path>
+        </svg>
+    </button>
+    <!-- Sidebar Left for Element Edit -->
+    <div class='sidebarLeft' id='sidebarLeft'>
+      <?php include(BASE_PATH . "/template_parts/elements.php");?>
+    </div>
+
+    <!-- Main Area Right -->
+    <div class='mainArea'>
+        <!-- Navigation -->
+        <div class='navigation' id='navigation'>
+            <?php include(BASE_PATH . "/template_parts/navigation.php");?>
+        </div>
+
+        <!-- App Area -->
+        <div class='app'>
+            <!-- Steps -->
+            <?php include(BASE_PATH . "/template_parts/step_info.php");?>
+            <?php include(BASE_PATH . "/template_parts/step_2d.php");?>
+            <?php include(BASE_PATH . "/template_parts/step_3d.php");?>
+            <?php include(BASE_PATH . "/template_parts/step_output.php");?>
+        </div>
+    </div>
+</section>
 	
 	<?php include(BASE_PATH . "/template_parts/modal_about.php");?>
 	<?php include(BASE_PATH . "/template_parts/modal_error.php");?>
