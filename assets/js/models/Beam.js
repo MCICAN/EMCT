@@ -1,11 +1,11 @@
-import * as config from "../configurations/config.js?v=20250503";
-import { Face } from "./Face.js?v=20250503";
-import { RectangularObject } from "./RectangularObject.js?v=20250503";
-import { PerimeterWall } from "./PerimeterWall.js?v=20250503";
-import { MassTimberWall } from "./MassTimberWall.js?v=20250503";
-import { LightFrameWall } from "./LightFrameWall.js?v=20250503";
-import * as geometry from "../utilities/geometryUtils.js?v=20250503";
-import * as number from "../utilities/numberUtils.js?v=20250503";
+import * as config from "../configurations/config.js?";
+import { Face } from "./Face.js?";
+import { RectangularObject } from "./RectangularObject.js?";
+import { PerimeterWall } from "./PerimeterWall.js?";
+import { MassTimberWall } from "./MassTimberWall.js?";
+import { LightFrameWall } from "./LightFrameWall.js?";
+import * as geometry from "../utilities/geometryUtils.js?";
+import * as number from "../utilities/numberUtils.js?";
 
 let NEXT_BEAM_ID = 30000; // Allow maximum 10000 beams only. ID can go from 30000 to 39999.
 

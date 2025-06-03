@@ -1,4 +1,4 @@
-import * as config from "../configurations/config.js?v=20250503";
+import * as config from "../configurations/config.js";
 let NEXT_FACE_ID = 50000; // Allow maximum 10000 beams only. ID can go from 50000 to 59999.
 
 export class Face {

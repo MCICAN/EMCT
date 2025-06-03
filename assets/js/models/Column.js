@@ -1,12 +1,12 @@
-import * as config from "../configurations/config.js?v=20250503";
-import { Face } from "./Face.js?v=20250503";
-import { Beam } from "./Beam.js?v=20250503";
-import { RectangularObject } from "./RectangularObject.js?v=20250503";
-import { PerimeterWall } from "./PerimeterWall.js?v=20250503";
-import { MassTimberWall } from "./MassTimberWall.js?v=20250503";
-import { LightFrameWall } from "./LightFrameWall.js?v=20250503";
-import * as geometry from "../utilities/geometryUtils.js?v=20250503";
-import * as number from "../utilities/numberUtils.js?v=20250503";
+import * as config from "../configurations/config.js";
+import { Face } from "./Face.js";
+import { Beam } from "./Beam.js";
+import { RectangularObject } from "./RectangularObject.js";
+import { PerimeterWall } from "./PerimeterWall.js";
+import { MassTimberWall } from "./MassTimberWall.js";
+import { LightFrameWall } from "./LightFrameWall.js";
+import * as geometry from "../utilities/geometryUtils.js";
+import * as number from "../utilities/numberUtils.js";
 
 let NEXT_COLUMN_ID = 40000; // Allow maximum 10000 columns only. ID can go from 40000 to 49999.
 
@@ -137,7 +137,7 @@ export class Column extends RectangularObject{
 	    return edges;
 	  }
 
-	  // Dot product of two 2D vectors [x1, y1] · [x2, y2]
+	  // Dot product of two 2D vectors [x1, y1] ï¿½ [x2, y2]
 	  function dot(v1, v2) {
 	    return v1[0] * v2[0] + v1[1] * v2[1];
 	  }
