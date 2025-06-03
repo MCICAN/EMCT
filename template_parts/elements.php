@@ -677,17 +677,6 @@ $elements = array(
 					<li class='third'>
 						<button class='selection_button' data-sidebar-button-action='objects_list' data-sidebar-button-element-type='<?php echo $element['code']; ?>' <?php echo ($element['is_list_object_enabled']) ? "" : "disabled"; ?>>
 							<span class='icon'>
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_15_17883)">
-										<path d="M8 4H21V6H8V4ZM3 3.5H6V6.5H3V3.5ZM3 10.5H6V13.5H3V10.5ZM3 17.5H6V20.5H3V17.5ZM8 11H21V13H8V11ZM8 18H21V20H8V18Z" fill="#2D2D2D" />
-									</g>
-									<defs>
-										<clipPath id="clip0_15_17883">
-											<rect width="24" height="24" fill="white" />
-										</clipPath>
-									</defs>
-								</svg>
-
 							</span>
 							<span class='name' data-language='sidebar_yellow_buttons__list_objects' data-language-original="List objects">
 								List objects
@@ -711,10 +700,6 @@ $elements = array(
 				<!-- Delete -->
 				<li>
 					<button class='selection_button danger' data-sidebar-button-action='delete' data-sidebar-button-element-type='<?php echo $element['code']; ?>' <?php echo ($element['is_delete_enabled']) ? "" : "disabled"; ?>>
-						<span class='icon'>
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-								<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-						</span>
 						<span class='name' data-language='sidebar_yellow_buttons__delete' data-language-original="Delete">
 							Delete
 						</span>
@@ -1128,7 +1113,7 @@ $elements = array(
 					</div>
 
 					<div class='apply_button_wrap clearfix'>
-						<button class='primary_button' data-sidebar-secondary-action-button='fire' data-language='sidebar_input__apply' data-language-original="Apply">
+						<button class='primary_button apply-tool' data-sidebar-secondary-action-button='fire' data-language='sidebar_input__apply' data-language-original="Apply">
 							Apply
 						</button>
 					</div>
