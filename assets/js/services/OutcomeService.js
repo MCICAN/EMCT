@@ -1,6 +1,6 @@
-import * as config from "../configurations/config.js?v=20250503";
-import { $, all } from "../utilities/domUtils.js?v=20250503";
-import * as measurement from "../utilities/measurementUtils.js?v=20250503";
+import * as config from "../configurations/config.js";
+import { $, all } from "../utilities/domUtils.js";
+import * as measurement from "../utilities/measurementUtils.js";
 
 export class OutcomeService {
 	constructor() {

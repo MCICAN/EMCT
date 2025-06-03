@@ -1,15 +1,15 @@
-import * as config from "../configurations/config.js?v=20250503";
-import { $, all } from "../utilities/domUtils.js?v=20250503";
-import * as geometry from "../utilities/geometryUtils.js?v=20250503";
-import { PerimeterWall } from "../models/PerimeterWall.js?v=20250503";
-import { Beam } from "../models/Beam.js?v=20250503";
-import { Column } from "../models/Column.js?v=20250503";
-import { MassTimberWall } from "../models/MassTimberWall.js?v=20250503";
-import { LightFrameWall } from "../models/LightFrameWall.js?v=20250503";
-import { Door } from "../models/Door.js?v=20250503";
-import { Window } from "../models/Window.js?v=20250503";
-import { Face } from "../models/Face.js?v=20250503";
-import { MouseTracker } from "../utilities/mouseTracker.js?v=20250503";
+import * as config from "../configurations/config.js";
+import { $, all } from "../utilities/domUtils.js";
+import * as geometry from "../utilities/geometryUtils.js";
+import { PerimeterWall } from "../models/PerimeterWall.js";
+import { Beam } from "../models/Beam.js";
+import { Column } from "../models/Column.js";
+import { MassTimberWall } from "../models/MassTimberWall.js";
+import { LightFrameWall } from "../models/LightFrameWall.js";
+import { Door } from "../models/Door.js";
+import { Window } from "../models/Window.js";
+import { Face } from "../models/Face.js";
+import { MouseTracker } from "../utilities/mouseTracker.js";
 
 
 export class SuiteRenderer {

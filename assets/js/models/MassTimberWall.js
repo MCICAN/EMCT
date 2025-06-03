@@ -1,12 +1,12 @@
-import * as config from "../configurations/config.js?v=20250503";
-import { Face } from "./Face.js?v=20250503";
-import { Door } from "./Door.js?v=20250503";
-import { Window } from "./Window.js?v=20250503";
-import { RectangularObject } from "./RectangularObject.js?v=20250503";
-import { PerimeterWall } from "./PerimeterWall.js?v=20250503";
-import { LightFrameWall } from "./LightFrameWall.js?v=20250503";
-import * as geometry from "../utilities/geometryUtils.js?v=20250503";
-import * as number from "../utilities/numberUtils.js?v=20250503";
+import * as config from "../configurations/config.js";
+import { Face } from "./Face.js";
+import { Door } from "./Door.js";
+import { Window } from "./Window.js";
+import { RectangularObject } from "./RectangularObject.js";
+import { PerimeterWall } from "./PerimeterWall.js";
+import { LightFrameWall } from "./LightFrameWall.js";
+import * as geometry from "../utilities/geometryUtils.js";
+import * as number from "../utilities/numberUtils.js";
 
 let NEXT_MASS_TIMBER_WALL_ID = 60000; // Allow maximum 10000 mass timber walls only. ID can go from 60000 to 69999.
 

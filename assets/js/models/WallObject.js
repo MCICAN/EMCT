@@ -1,5 +1,5 @@
-import * as config from "../configurations/config.js?v=20250503";
-import * as geometry from "../utilities/geometryUtils.js?v=20250503";
+import * as config from "../configurations/config.js";
+import * as geometry from "../utilities/geometryUtils.js";
 
 export class WallObject {
 	constructor(distance_from_left, length, height){

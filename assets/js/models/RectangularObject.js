@@ -1,6 +1,6 @@
-import * as config from "../configurations/config.js?v=20250503";
-import * as geometry from "../utilities/geometryUtils.js?v=20250503";
-import { Face } from "./Face.js?v=20250503";
+import * as config from "../configurations/config.js";
+import * as geometry from "../utilities/geometryUtils.js";
+import { Face } from "./Face.js";
 
 export class RectangularObject {
 	constructor(x, y, length, width, rotation){

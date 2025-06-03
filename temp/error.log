@@ -917,3 +917,13 @@ Stack trace:
 [02-Jun-2025 19:38:50 Europe/Berlin] PHP Warning:  Undefined array key "is_list_object_shown" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 668
 [02-Jun-2025 19:38:50 Europe/Berlin] PHP Warning:  Undefined array key "is_info_enabled" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 687
 [02-Jun-2025 19:38:50 Europe/Berlin] PHP Warning:  Undefined array key "is_delete_enabled" in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 702
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30000 - beam_end_1 - expo: 1260.25 - face: 1260.25 - embed: 0
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30000 - beam_end_2 - expo: 1260.25 - face: 1260.25 - embed: 0
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30000 - beam_side_1 - expo: 11360 - face: 11360 - embed: 0
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30000 - beam_side_2 - expo: 11360 - face: 11360 - embed: 0
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30000 - beam_bottom - expo: 11360 - face: 11360 - embed: 0
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30001 - beam_end_1 - expo: 1260.25 - face: 1260.25 - embed: 0
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30001 - beam_end_2 - expo: 1260.25 - face: 1260.25 - embed: 0
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30001 - beam_side_1 - expo: 11360 - face: 11360 - embed: 0
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30001 - beam_side_2 - expo: 11360 - face: 11360 - embed: 0
+[03-Jun-2025 18:37:04 Europe/Berlin] no:30001 - beam_bottom - expo: 11360 - face: 11360 - embed: 0

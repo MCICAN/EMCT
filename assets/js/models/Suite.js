@@ -1,11 +1,11 @@
-import * as config from "../configurations/config.js?v=20250503";
-import { PerimeterWall } from "./PerimeterWall.js?v=20250503";
-import { Ceiling } from "./Ceiling.js?v=20250503";
-import { Beam } from "./Beam.js?v=20250503";
-import { Column } from "./Column.js?v=20250503";
-import { MassTimberWall } from "./MassTimberWall.js?v=20250503";
-import { LightFrameWall } from "./LightFrameWall.js?v=20250503";
-import * as geometry from "../utilities/geometryUtils.js?v=20250503";
+import * as config from "../configurations/config.js";
+import { PerimeterWall } from "./PerimeterWall.js";
+import { Ceiling } from "./Ceiling.js";
+import { Beam } from "./Beam.js";
+import { Column } from "./Column.js";
+import { MassTimberWall } from "./MassTimberWall.js";
+import { LightFrameWall } from "./LightFrameWall.js";
+import * as geometry from "../utilities/geometryUtils.js";
 
 //const [
 //   { PerimeterWall },

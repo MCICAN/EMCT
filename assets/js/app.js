@@ -1,14 +1,14 @@
 import * as config from "./configurations/config.js";
-import { Suite } from "./models/Suite.js?v=20250503";
-import { SuiteRenderer } from "./services/SuiteRenderer.js?v=20250503";
-import { ThreeDRenderer } from "./services/ThreeDRenderer.js?v=20250503";
-import { LanguageService } from "./services/LanguageService.js?v=20250503";
-import { OutcomeService } from "./services/OutcomeService.js?v=20250503";
-import { NavigationController } from "./controllers/NavigationController.js?v=20250503";
-import { SuiteController } from "./controllers/SuiteController.js?v=20250503";
-import { LanguageController } from "./controllers/LanguageController.js?v=20250503";
-import { $, all } from "./utilities/domUtils.js?v=20250503";
-import { MouseTracker } from "./utilities/mouseTracker.js?v=20250503";
+import { Suite } from "./models/Suite.js";
+import { SuiteRenderer } from "./services/SuiteRenderer.js";
+import { ThreeDRenderer } from "./services/ThreeDRenderer.js";
+import { LanguageService } from "./services/LanguageService.js";
+import { OutcomeService } from "./services/OutcomeService.js";
+import { NavigationController } from "./controllers/NavigationController.js";
+import { SuiteController } from "./controllers/SuiteController.js";
+import { LanguageController } from "./controllers/LanguageController.js";
+import { $, all } from "./utilities/domUtils.js";
+import { MouseTracker } from "./utilities/mouseTracker.js";
 
 window.addEventListener("load", () => {
 	const canvas = $("#suiteCanvas");

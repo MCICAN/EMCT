@@ -1,5 +1,5 @@
-import * as config from "../configurations/config.js?v=20250503";
-import { $, all } from "../utilities/domUtils.js?v=20250503";
+import * as config from "../configurations/config.js";
+import { $, all } from "../utilities/domUtils.js";
 //const domUtils = await import(`../utilities/domUtils.js?v=${config.VERSION}`);
 //const { $, all } = domUtils;
 
