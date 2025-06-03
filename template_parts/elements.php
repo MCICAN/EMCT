@@ -1,7 +1,7 @@
 <?php
 $elements = array(
 	'suite' => array(
-		'name' => 'Suite objects',
+		'name' => 'Add Object',
 		'code' => 'suite',
 		'image' => BASE_URL . "/assets/images/add-object.svg",
 		'is_move_enabled' => false,
@@ -11,8 +11,8 @@ $elements = array(
 		'is_property_enabled' => false,
 		'is_property_shown' => false,
 		'is_add_object_enabled' => true,
-		'is_list_object_shown' => true,
-		'is_list_object_enabled' => true,
+		'is_list_object_shown' => false,
+		'is_list_object_enabled' => false,
 		'is_info_enabled' => true,
 		'is_delete_enabled' => false,
 	),
@@ -106,7 +106,7 @@ $elements = array(
 	'beam' => array(
 		'name' => 'A beam',
 		'code' => 'beam',
-		'image' => BASE_URL . "/assets/images/beam_compressed.png",
+		'image' => BASE_URL . "/assets/images/beam.png",
 		'is_move_enabled' => true,
 		'is_edit_enabled' => true,
 		'is_copy_enabled' => true,
@@ -123,7 +123,7 @@ $elements = array(
 	'column' => array(
 		'name' => 'A column',
 		'code' => 'column',
-		'image' => BASE_URL . "/assets/images/column_compressed.png",
+		'image' => BASE_URL . "/assets/images/column.png",
 		'is_move_enabled' => true,
 		'is_edit_enabled' => true,
 		'is_copy_enabled' => true,
@@ -140,7 +140,7 @@ $elements = array(
 	'lightframe_wall' => array(
 		'name' => 'A lightframe wall',
 		'code' => 'lightframe_wall',
-		'image' => BASE_URL . "/assets/images/lightframe_wall.png",
+		'image' => BASE_URL . "/assets/images/frame-wall.png",
 		'is_move_enabled' => true,
 		'is_edit_enabled' => true,
 		'is_copy_enabled' => true,
@@ -157,7 +157,7 @@ $elements = array(
 	'mass_timber_wall' => array(
 		'name' => 'A mass timber wall',
 		'code' => 'mass_timber_wall',
-		'image' => BASE_URL . "/assets/images/mass_timber_wall.png",
+		'image' => BASE_URL . "/assets/images/mass-timber-wall.png",
 		'is_move_enabled' => true,
 		'is_edit_enabled' => true,
 		'is_copy_enabled' => true,
@@ -665,10 +665,7 @@ $elements = array(
 				<!-- Add objects -->
 				<li class='third'>
 					<button class='selection_button' data-sidebar-button-action='objects' data-sidebar-button-element-type='<?php echo $element['code']; ?>' <?php echo ($element['is_add_object_enabled']) ? "" : "disabled"; ?>>
-						<span class='icon'>
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-								<path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z" />
-						</span>
+						
 						<span class='name' data-language='sidebar_yellow_buttons__add_objects' data-language-original="Add objects">
 							Add objects
 						</span>
@@ -810,7 +807,7 @@ $elements = array(
 				 	Change the ceiling height to (x) meters.
 			 -->
 					<div class='input_group ceiling_height' data-input-group-type='ceiling_height'>
-						<span data-language='sidebar_input__change_ceiling_height_to' data-language-original="Change the ceiling height to">Change the ceiling height to</span>
+						<span data-language='sidebar_input__change_ceiling_height_to' data-language-original="Ceiling Height">Ceiling Height</span>
 						<?php include(BASE_PATH . "/template_parts/measurement_inputs.php"); ?>
 						.
 					</div>
@@ -874,9 +871,9 @@ $elements = array(
 				 	Thickness: (x) meters.
 			 -->
 					<div class='input_group thickness' data-input-group-type='thickness'>
-						<span data-language='sidebar_input__thickness' data-language-original="Thickness">Thickness</span>:
+						<span data-language='sidebar_input__thickness' data-language-original="Thickness">Thickness</span>
 						<?php include(BASE_PATH . "/template_parts/measurement_inputs.php"); ?>
-						.
+						
 					</div>
 
 					<!-- Distance from ceiling:
@@ -1143,38 +1140,72 @@ $elements = array(
 					<div class='objects_list'>
 						<div class='object' data-input-group-type='add_door'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='door'>
+								<div>
 								<img src='<?php echo $elements['door']['image']; ?>' alt='Door' data-language-alt='alt__icon_for_door' />
 								<p data-language='sidebar_input__add_object_door' data-language-original="Door">Door</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
+								</div>
+								
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_window'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='window'>
-								<img src='<?php echo $elements['window']['image']; ?>' alt='Window' data-language-alt='alt__icon_for_window' />
+								<div>
+									<img src='<?php echo $elements['window']['image']; ?>' alt='Window' data-language-alt='alt__icon_for_window' />
 								<p data-language='sidebar_input__add_object_window' data-language-original="Window">Window</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
+								</div>
+								
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_beam'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='beam'>
-								<img src='<?php echo $elements['beam']['image']; ?>' alt='Beam' data-language-alt='alt__icon_for_beam' />
+								<div>
+									<img src='<?php echo $elements['beam']['image']; ?>' alt='Beam' data-language-alt='alt__icon_for_beam' />
 								<p data-language='sidebar_input__add_object_beam' data-language-original="Beam">Beam</p>
+								</div>
+								
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
+</svg>
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_column'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='column'>
-								<img src='<?php echo $elements['column']['image']; ?>' alt='A column' data-language-alt='alt__icon_for_column' />
+								<div>
+									<img src='<?php echo $elements['column']['image']; ?>' alt='A column' data-language-alt='alt__icon_for_column' />
 								<p data-language='sidebar_input__add_object_column' data-language-original="Column">Column</p>
+								</div>
+								
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
+</svg>
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_lightframe_wall'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='lightframe_wall'>
-								<img src='<?php echo $elements['lightframe_wall']['image']; ?>' alt='Light frame wall' data-language-alt='alt__icon_for_lightframe_wall' />
+								<div>
+									<img src='<?php echo $elements['lightframe_wall']['image']; ?>' alt='Light frame wall' data-language-alt='alt__icon_for_lightframe_wall' />
 								<p data-language='sidebar_input__add_object_lightframe_wall' data-language-original="Lightframe wall">Lightframe wall</p>
+								</div>
+								
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
+</svg>
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_mass_timber_wall'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='mass_timber_wall'>
-								<img src='<?php echo $elements['mass_timber_wall']['image']; ?>' alt='Mass timber wall' data-language-alt='alt__icon_for_mass_timber_wall' />
+								<div>
+									<img src='<?php echo $elements['mass_timber_wall']['image']; ?>' alt='Mass timber wall' data-language-alt='alt__icon_for_mass_timber_wall' />
 								<p data-language='sidebar_input__add_object_mass_timber_wall' data-language-original="Mass timber wall">Mass timber wall</p>
+								</div>
+								
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
+</svg>
 							</button>
 						</div>
 					</div>
