@@ -11,8 +11,8 @@ $elements = array(
 		'is_property_enabled' => false,
 		'is_property_shown' => false,
 		'is_add_object_enabled' => true,
-		'is_list_object_shown' => false,
-		'is_list_object_enabled' => false,
+		'is_list_object_shown' => true,
+		'is_list_object_enabled' => true,
 		'is_info_enabled' => true,
 		'is_delete_enabled' => false,
 	),
@@ -677,16 +677,7 @@ $elements = array(
 					<li class='third'>
 						<button class='selection_button' data-sidebar-button-action='objects_list' data-sidebar-button-element-type='<?php echo $element['code']; ?>' <?php echo ($element['is_list_object_enabled']) ? "" : "disabled"; ?>>
 							<span class='icon'>
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_15_17883)">
-										<path d="M8 4H21V6H8V4ZM3 3.5H6V6.5H3V3.5ZM3 10.5H6V13.5H3V10.5ZM3 17.5H6V20.5H3V17.5ZM8 11H21V13H8V11ZM8 18H21V20H8V18Z" fill="#2D2D2D" />
-									</g>
-									<defs>
-										<clipPath id="clip0_15_17883">
-											<rect width="24" height="24" fill="white" />
-										</clipPath>
-									</defs>
-								</svg>
+								
 
 							</span>
 							<span class='name' data-language='sidebar_yellow_buttons__list_objects' data-language-original="List objects">

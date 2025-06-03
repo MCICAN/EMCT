@@ -260,9 +260,6 @@ input[type="number"]:focus {
   letter-spacing: var(--typography-paragraph-letter-spacing-sm, -0.28px);
 }
 
-
- * Measurement Inputs (in measurement_inputs.php, elements.php, step_info.php)
- =================================================================*/
 input.unit_input_cm,
 input.unit_input_mm,
 input.unit_input_inches,
@@ -955,7 +952,7 @@ label.radio_label input[type="radio"]:checked::after {
 .element_wrap .area.area_list_objects table td {
   text-align: left;
   padding: 5px;
-  border: 3px solid white;
+  
 }
 
 /**=================================================================
@@ -1451,7 +1448,7 @@ display: flex;
 .app .appArea.step_output .if_sizes table tr td,
 .app .appArea.step_output .if_sizes table tr th {
   padding: 15px;
-  border: none;
+  border: 1px solid transparent;
 }
 .app .appArea.step_output .if_sizes table tr td.second.active {
   background: transparent !important;
@@ -1903,6 +1900,11 @@ tr:not(.hidden):nth-child(even) {
   background-color: #ffffff; /* Example color for even rows */
 }
 
+/* Evitar que o estilo tr:not(.hidden):nth-child(even) afete a tabela com ID object_list_items */
+#object_list_items tr:not(.hidden):nth-child(even) {
+    background: inherit;
+}
+
 .primary_button_content {
   display: inline-flex;
   align-items: center;
@@ -1953,7 +1955,7 @@ tr:not(.hidden):nth-child(even) {
 /* Ajusta botões para ocuparem apenas o espaço do texto */
 .element_wrap .buttons_wrap {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   align-items: center;
   padding: 2px;
   border-radius: 6px;
@@ -1997,6 +1999,9 @@ tr:not(.hidden):nth-child(even) {
     flex-wrap: wrap;
     gap: 0.25rem;
   }
+}
+.backgroundHidden {
+  background-color: #F9F9F9 !important;
 }
 .p-headtools {
 color: var(--shared-colors-neutral-700, #2D2D2D) !important;
@@ -2068,4 +2073,38 @@ letter-spacing: -0.24px;
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+/* Estilo para o texto 'Beam' */
+.area_list_objects a[data-suite-object-select] {
+    color: #2D2D2D;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 140% */
+    letter-spacing: -0.24px;
+}
+
+/* Remove linhas brancas da tabela */
+.area_list_objects table {
+    border-collapse: collapse;
+}
+
+.area_list_objects table th,
+.area_list_objects table td {
+    border: none;
+}
+
+.area_list_objects table th, .area_list_objects table td {
+color: #2D2D2D;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 140% */
+    letter-spacing: -0.24px;
+}
+#object_list_items :nth-child(even) {
+  background-color: #f9f9f9;
 }
