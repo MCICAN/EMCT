@@ -677,6 +677,7 @@ $elements = array(
 					<li class='third'>
 						<button class='selection_button' data-sidebar-button-action='objects_list' data-sidebar-button-element-type='<?php echo $element['code']; ?>' <?php echo ($element['is_list_object_enabled']) ? "" : "disabled"; ?>>
 							<span class='icon'>
+
 							</span>
 							<span class='name' data-language='sidebar_yellow_buttons__list_objects' data-language-original="List objects">
 								List objects
