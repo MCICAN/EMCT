@@ -261,8 +261,8 @@ input[type="number"]:focus {
 }
 
 
- * Measurement Inputs (in measurement_inputs.php, elements.php, step_info.php)
- =================================================================*/
+ /* * Measurement Inputs (in measurement_inputs.php, elements.php, step_info.php)
+ =================================================================*/ 
 input.unit_input_cm,
 input.unit_input_mm,
 input.unit_input_inches,
@@ -650,6 +650,7 @@ label.radio_label input[type="radio"]:checked::after {
 }
 .element_wrap.shown {
   display: block;
+  min-height: 350px;
 }
 .headtools {
   display: flex;
@@ -666,6 +667,7 @@ label.radio_label input[type="radio"]:checked::after {
   background-color: #f8f8f8;
   padding: 12px;
   border-radius: 4px;
+  min-height: 350px;
 }
 
 .buttons_wrap.clearfix {
@@ -1373,11 +1375,12 @@ letter-spacing: -0.28px;
 
   position: absolute;
   bottom: 20px;
-  left: calc(50% - 115px);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 20px;
-
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px; /* ajuste conforme necessário */
+  box-sizing: border-box;
 }
 .app .appArea.step_3d .bottom_button {
   user-select: none;
@@ -1953,7 +1956,7 @@ tr:not(.hidden):nth-child(even) {
 /* Ajusta botões para ocuparem apenas o espaço do texto */
 .element_wrap .buttons_wrap {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   align-items: center;
   padding: 2px;
   border-radius: 6px;
@@ -2021,7 +2024,7 @@ letter-spacing: var(--typography-paragraph-letter-spacing-lg, -0.36px);
 }
 .apply_button_wrap.apply-tool .primary_button.apply-tool {
   margin-left: auto;
-  color: var(--shared-colors-neutral-300, #A8A8A8);
+  color: var(--shared-colors-neutral-300, #606060);
   font-family: var(--typography-paragraph-fonts-semi-regular-light, Inter);
   font-size: var(--typography-paragraph-size-xs, 12px);
   font-style: normal;
