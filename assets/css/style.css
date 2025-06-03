@@ -677,6 +677,7 @@ label.radio_label input[type="radio"]:checked::after {
   border-radius: 6px;
   border: 1px solid #bebebe;
   background: #fff;
+  flex-wrap: wrap;
 }
 .element_wrap .heading {
   text-align: left;
@@ -887,6 +888,9 @@ label.radio_label input[type="radio"]:checked::after {
   width: 200px;
 }
 .element_wrap .area .apply_button_wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   padding: 15px 0;
 }
 .element_wrap .area .apply_button_wrap button {
@@ -939,7 +943,7 @@ label.radio_label input[type="radio"]:checked::after {
   transition: all var(--time-button-movement) ease;
 }
 .element_wrap .area .objects_list .object button:hover {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(200, 200, 200, 0.4);
 }
 .element_wrap .area .objects_list .object button img {
   max-width: 140px;
@@ -1154,7 +1158,11 @@ label.radio_label input[type="radio"]:checked::after {
 
 .app .buttons_wrap .floating_button {
   margin-bottom: 0;
-  padding: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 .floating_button {
   border-radius: 6px;
@@ -1329,6 +1337,18 @@ letter-spacing: -0.28px;
   border: 1px solid #bebebe;
   background: #fff;
 }
+
+.toolbar-button {
+  background-color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.toolbar-button:hover {
+  background-color: #f5f5f5;
+}
+
 .app .appArea.step_2d canvas {
   position: absolute;
   top: 0;
@@ -2033,6 +2053,20 @@ letter-spacing: var(--typography-paragraph-letter-spacing-lg, -0.36px);
   letter-spacing: var(--typography-paragraph-letter-spacing-xs, -0.24px);
   border: none;
   background-color: #f8f8f8;
+}
+
+.primary_button.apply-tool {
+  padding: 16px;
+  margin-left: auto;
+  color: var(--shared-colors-neutral-300, #606060);
+  font-family: var(--typography-paragraph-fonts-semi-regular-light, Inter);
+  font-size: var(--typography-paragraph-size-xs, 12px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--typography-paragraph-line-height-xs, 16.8px);
+  letter-spacing: var(--typography-paragraph-letter-spacing-xs, -0.24px);
+  border: none;
+  background-color: #e6e6e6;
 }
 
 .information p {
