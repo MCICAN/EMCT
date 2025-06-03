@@ -100,34 +100,46 @@
 		<img src="assets/images/logo-cwc-header.svg" alt="CWC Logo" style="height:64px;">
 		<div class="main-menu-items">
 		<div class="menu-item">
-			<span>Resources</span>
+			<a href="https://cwc.ca/browse-resources/" target="_blank" rel="noopener">
+				<span>Resources</span>
+			</a>
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
 			</svg>
 		</div>
 		<div class="menu-item">
-			<span>Building with Wood</span>
+			<a href="https://cwc.ca/building-with-wood/" target="_blank" rel="noopener">
+				<span>Building with Wood</span>
+			</a>
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
 			</svg>
 		</div>
 		<div class="menu-item">
-			<span>Publications</span>
+			<a href="https://cwc.ca/publications/" target="_blank" rel="noopener">
+				<span>Publications</span>
+			</a>
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
 			</svg>
 		</div>
 		<div class="menu-item">
-			<span>Events</span>
+			<a href="https://cwc.ca/all-events" target="_blank" rel="noopener">
+				<span>Events</span>
+			</a>
 		</div>
 		<div class="menu-item">
-			<span>About Us</span>
+			<a href="https://cwc.ca/about-us/" target="_blank" rel="noopener">
+				<span>About Us</span>
+			</a>
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
 			</svg>
 		</div>
 		<div class="menu-item">
-			<span>Contact</span>
+			<a href="https://cwc.ca/contact-us" target="_blank" rel="noopener">
+				<span>Contact</span>
+			</a>
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M12 13.172L16.95 8.22198L18.364 9.63598L12 16L5.63599 9.63598L7.04999 8.22198L12 13.172Z" fill="#2D2D2D"/>
 			</svg>
