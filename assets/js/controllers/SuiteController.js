@@ -229,7 +229,43 @@ export class SuiteController {
 	    	
 	    	this.suiteRenderer.draw();
 	    });
+		 $("[data-canvas-ceiling-button-toolbar]").addEventListener("click", (e) => {
+	    	// De-select ceiling if already selected
+	    	if(this.suiteRenderer.selectedElement.type == this.suiteRenderer.ELEMENT_CEILING){
+	    		this.resetAllCanvasInteractionParameters();
+	    		this.switchSidebar("step_" + this.navigationController.currentStep + "_instruction");
+	    		return;
+	    	}
+			
+			this.suiteRenderer.selectedElement = {type: this.suiteRenderer.ELEMENT_CEILING, id:0, parent_id:0, side:0};
+	    	this.switchSidebar('ceiling');
+	    	
+	    	this.suiteRenderer.draw();
+	    });
 	    $("[data-canvas-suite-button]").addEventListener("click", (e) => {
+	    	// De-select suite if already selected
+	    	if(this.suiteRenderer.selectedElement.type == this.suiteRenderer.ELEMENT_SUITE){
+	    		this.resetAllCanvasInteractionParameters();
+	    		this.switchSidebar("step_" + this.navigationController.currentStep + "_instruction");
+	    		return;
+	    	}
+	    	
+	    	// Add suite object
+			this.suiteRenderer.selectedElement = {type: this.suiteRenderer.ELEMENT_SUITE, id:0, parent_id:0, side:0};
+	    	this.switchSidebar('suite');
+	    	
+	    	all("[data-sidebar-button-action]").forEach((el2)=>{
+	    		el2.classList.remove("active");
+	    	});
+	    	
+	    	$("[data-sidebar-button-action='objects'][data-sidebar-button-element-type='suite']").classList.add("active");
+	    	
+	    	this.toggleSidebarEditArea("objects", "suite");
+	    	
+	    	this.suiteRenderer.draw();
+	    });
+
+		 $("[data-canvas-suite-button-toolbar]").addEventListener("click", (e) => {
 	    	// De-select suite if already selected
 	    	if(this.suiteRenderer.selectedElement.type == this.suiteRenderer.ELEMENT_SUITE){
 	    		this.resetAllCanvasInteractionParameters();
@@ -266,8 +302,37 @@ export class SuiteController {
 	    	
 	    	this.suiteRenderer.draw();
 	    });
+
+		$("[data-canvas-list-object-button-toolbar]").addEventListener("click", (e) => {
+	    	// List suite object
+	    	this.switchSidebar('suite');
+	    	
+	    	all("[data-sidebar-button-action]").forEach((el2)=>{
+	    		el2.classList.remove("active");
+	    	});
+	    	
+	    	$("[data-sidebar-button-action='objects_list'][data-sidebar-button-element-type='suite']").classList.add("active");
+	    	
+	    	this.toggleSidebarEditArea("objects_list", "suite");
+	    	
+	    	this.suiteRenderer.draw();
+	    });
 	    
 	    $("[data-canvas-3d-button]").addEventListener("click", (e) => {
+	    	if(this.suite.ceiling.height == 0){
+	    		error($("[data-language='hidden__error_set_the_ceiling_height_first']").innerHTML);
+	    		return;
+	    	}
+	    	
+	    	if(this.navigationController.maxAllowedStep == 3){
+	    		this.navigationController.goFromStep3ToStep4();
+				return;
+			}
+	    	
+	    	this.navigationController.requestStep(4);
+	    });
+
+		$("[data-canvas-3d-button-toolbar]").addEventListener("click", (e) => {
 	    	if(this.suite.ceiling.height == 0){
 	    		error($("[data-language='hidden__error_set_the_ceiling_height_first']").innerHTML);
 	    		return;

@@ -378,6 +378,24 @@ export class NavigationController {
 			this.suiteRenderer.showIDs = false;
 		}
 		
+		// Toolbar: mostrar botões apenas no step 3
+		const toolbarBtns = [
+			"[data-canvas-ceiling-button-toolbar]",
+			"[data-canvas-suite-button-toolbar]",
+			"[data-canvas-list-object-button-toolbar]",
+			"[data-canvas-3d-button-toolbar]",
+			".toolbar svg[width='1'][height='36']" // Divider SVGs
+		];
+		toolbarBtns.forEach(sel => {
+			all(sel).forEach(btn => {
+				if (this.currentStep === 3) {
+					btn.classList.remove("hidden");
+				} else {
+					btn.classList.add("hidden");
+				}
+			});
+		});
+
 		// 3D Renderer
 		if(this.currentStep == 4){
 			this.threeDRenderer.resizeRenderer();
@@ -507,7 +525,6 @@ export class NavigationController {
 //	        $("#page_loader").classList.add("hidden");
 		}
 
-		
 		
 		// Atualiza os ícones dos steps (SVGs)
 		all("[data-navigation-step]").forEach((el) => {
