@@ -1,6 +1,6 @@
-import * as config from "../configurations/config.js?";
-import { $, all, error, success } from "../utilities/domUtils.js3";
-import * as measurement from "../utilities/measurementUtils.js?";
+import * as config from "../configurations/config.js";
+import { $, all, error, success } from "../utilities/domUtils.js";
+import * as measurement from "../utilities/measurementUtils.js";
 
 export class NavigationController {
 	constructor(suite, suiteRenderer, threeDRenderer, languageService, outcomeService){
