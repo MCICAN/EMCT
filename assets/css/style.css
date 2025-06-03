@@ -103,7 +103,7 @@ select:focus {
 }
 input[type="text"],
 input[type="number"] {
-  padding: 0.375rem 0.75rem;
+  padding: 0.1rem;
   line-height: 1.5;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -287,7 +287,7 @@ input.unit_input_cm {
   width: 80px;
 }
 input.unit_input_mm {
-  width: 120px;
+  width: 88px;
 }
 input.unit_input_inches {
   width: 66px;
@@ -377,11 +377,12 @@ label.radio_label input[type="radio"]:checked::after {
 }
 .input_group p {
   color: #414141;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 19.6px; /* 140% */
   letter-spacing: -0.28px;
+  margin-bottom: 10px;
 }
 .input_group li {
   color: #414141;
@@ -915,14 +916,14 @@ label.radio_label input[type="radio"]:checked::after {
 
 .element_wrap .area .objects_list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px 10px;
 }
 .element_wrap .area .objects_list .object {
   display: none;
   flex: 0 1 calc(50% - 10px);
   box-sizing: border-box;
-  justify-content: center;
+  
   align-items: center;
 }
 .element_wrap .area .objects_list .object.shown {
@@ -932,7 +933,7 @@ label.radio_label input[type="radio"]:checked::after {
   text-align: center;
   border: 0;
   padding: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  background: none;
   transition: all var(--time-button-movement) ease;
 }
 .element_wrap .area .objects_list .object button:hover {
@@ -1861,6 +1862,26 @@ display: flex;
   font-weight: 400;
   color: #444;
 }
+.ceiling_height span {
+	color: #2D2D2D;
+/* Paragraph/regular/xs */
+font-family: 'Inter';
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.8px; /* 140% */
+letter-spacing: -0.24px;
+}
+.thickness span {
+color: #2D2D2D;
+/* Paragraph/regular/xs */
+font-family: 'Inter';
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.8px; /* 140% */
+letter-spacing: -0.24px;
+}
 @media (max-width: 700px) {
   .app .appArea.step_output .if_sizes table th,
   .app .appArea.step_output .if_sizes table td {
@@ -2007,6 +2028,44 @@ letter-spacing: var(--typography-paragraph-letter-spacing-lg, -0.36px);
   font-weight: 600;
   line-height: var(--typography-paragraph-line-height-xs, 16.8px);
   letter-spacing: var(--typography-paragraph-letter-spacing-xs, -0.24px);
+  border: none;
+  background-color: #f8f8f8;
+}
+
+.information p {
+	color:  #2D2D2D;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.8px; /* 140% */
+letter-spacing: -0.24px;
+}
+.element_wrap .area .objects_list .object button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.object button {
+	width: 100%
+}
+.selection_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selection_button .icon,
+.selection_button .name {
+    display: flex;
+    align-items: center;
 }
 
 
+.selection_button .icon + .name {
+    margin-left: 8px; /* espaço entre ícone e texto */
+}
+.element_wrap .area .objects_list .object button div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
