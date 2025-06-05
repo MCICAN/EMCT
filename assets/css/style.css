@@ -384,7 +384,7 @@ label.radio_label input[type="radio"]:checked::after {
   font-weight: 400;
   line-height: 19.6px; /* 140% */
   letter-spacing: -0.28px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 .input_group li {
   color: #414141;
@@ -868,7 +868,6 @@ label.radio_label input[type="radio"]:checked::after {
   margin-bottom: 20px;
 }
 .element_wrap .area .input_group.info_prompt p {
-  margin-bottom: 20px;
 }
 .element_wrap .area .input_group.info_prompt .legend_img_wrapper_wrap {
   overflow-x: hidden;
@@ -893,7 +892,7 @@ label.radio_label input[type="radio"]:checked::after {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px;
 }
 .element_wrap .area .apply_button_wrap button {
 }
@@ -1423,6 +1422,11 @@ display: flex;
     letter-spacing: -0.28px;
 }
 
+.encapsulation-button {
+  border: 1px solid #bebebe;
+  font-weight: 600;
+  background-color: #f4f4f4;
+}
 
 /**=================================================================
  * .element_wrap .mainWrap .app .appArea.step_output (Step 5)
@@ -2056,7 +2060,7 @@ letter-spacing: var(--typography-paragraph-letter-spacing-lg, -0.36px);
   margin-left: auto;
   color: var(--shared-colors-neutral-300, #606060);
   font-family: var(--typography-paragraph-fonts-semi-regular-light, Inter);
-  font-size: var(--typography-paragraph-size-xs, 12px);
+  font-size: var(--typography-paragraph-size-xs, 16px);
   font-style: normal;
   font-weight: 600;
   line-height: var(--typography-paragraph-line-height-xs, 16.8px);
