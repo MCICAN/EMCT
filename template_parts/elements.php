@@ -543,7 +543,7 @@ $elements = array(
 					Once you are done, click on the white "Go Back" button.
 				</p>
 				<p>
-					<b>Don't forget to click on the yellow Apply button to finalize your edits once you go back.</b>
+					<b>Don't forget to click on the Apply button to finalize your edits once you go back.</b>
 				</p>
 				<p>
 					Hint: If you have a hard-time seeing the object, trying zooming in or out.
@@ -574,7 +574,7 @@ $elements = array(
 			</div>
 
 			<div class='apply_button_wrap'>
-				<button class='secondary_button' data-sidebar-secondary-action-button='encapsulation_edit_back' data-language='sidebar_encapsulation_edit__go_back' data-language-original="Go back">
+				<button class='primary_button apply-tool' data-sidebar-secondary-action-button='encapsulation_edit_back' data-language='sidebar_encapsulation_edit__go_back' data-language-original="Go back">
 					Go Back
 				</button>
 			</div>
@@ -665,7 +665,7 @@ $elements = array(
 				<!-- Add objects -->
 				<li class='third'>
 					<button class='selection_button' data-sidebar-button-action='objects' data-sidebar-button-element-type='<?php echo $element['code']; ?>' <?php echo ($element['is_add_object_enabled']) ? "" : "disabled"; ?>>
-						
+
 						<span class='name' data-language='sidebar_yellow_buttons__add_objects' data-language-original="Add objects">
 							Add objects
 						</span>
@@ -686,16 +686,16 @@ $elements = array(
 					</li>
 				<?php } ?>
 
-				                <?php if ($element['is_property_shown']) { ?>
-                    <!-- Fire Property -->
-                    <li class='third'>
-                        <button class='selection_button' data-sidebar-button-action='fire' data-sidebar-button-element-type='<?php echo $element['code']; ?>' <?php echo ($element['is_property_enabled']) ? "" : "disabled"; ?>>
-                            <span class='name' data-language='sidebar_yellow_buttons__fire' data-language-original="Fire property">
-                                Fire property
-                            </span>
-                        </button>
-                    </li>
-                <?php } ?>
+				<?php if ($element['is_property_shown']) { ?>
+					<!-- Fire Property -->
+					<li class='third'>
+						<button class='selection_button' data-sidebar-button-action='fire' data-sidebar-button-element-type='<?php echo $element['code']; ?>' <?php echo ($element['is_property_enabled']) ? "" : "disabled"; ?>>
+							<span class='name' data-language='sidebar_yellow_buttons__fire' data-language-original="Fire property">
+								Fire property
+							</span>
+						</button>
+					</li>
+				<?php } ?>
 
 
 				<!-- Delete -->
@@ -859,7 +859,7 @@ $elements = array(
 					<div class='input_group thickness' data-input-group-type='thickness'>
 						<span data-language='sidebar_input__thickness' data-language-original="Thickness">Thickness</span>
 						<?php include(BASE_PATH . "/template_parts/measurement_inputs.php"); ?>
-						
+
 					</div>
 
 					<!-- Distance from ceiling:
@@ -1056,16 +1056,22 @@ $elements = array(
 						<p>
 							<label class='radio_label align_top'>
 								<input type='radio' name='is_part_or_whole_encapsulated_<?php echo $element['code']; ?>' data-input-is-wall-exposed='true' value='2' />
-								<?php if ($element['code'] == 'perimeter_wall' || $element['code'] == 'mass_timber_wall') { ?>
-									<span data-language='sidebar_input__checkbox_wholly_protected_by_encapsulation_walls' data-language-original="Yes, all of this is protected by encapsulation. (Any part occupied by a door or window is automatically considered not encapsulated.)">
-										Yes, all of this is protected by encapsulation.
-										(Any part occupied by a door or window is automatically considered not encapsulated.)
-									</span>
-								<?php } else { ?>
-									<span data-language='sidebar_input__checkbox_wholly_protected_by_encapsulation_others' data-language-original="Yes, all of this is protected by encapsulation.">
-										Yes, all of this is protected by encapsulation.
-									</span>
-								<?php } ?>
+								<!-- Beta change 2 commented   
+						<?php if ($element['code'] == 'perimeter_wall' || $element['code'] == 'mass_timber_wall') { ?>
+							<span data-language='sidebar_input__checkbox_wholly_protected_by_encapsulation_walls' data-language-original="Yes, all of this is protected by encapsulation. (Any part occupied by a door or window is automatically considered not encapsulated.)">
+								Yes, all of this is protected by encapsulation.
+								(Any part occupied by a door or window is automatically considered not encapsulated.)
+							</span>
+						<?php } else { ?>
+							<span data-language='sidebar_input__checkbox_wholly_protected_by_encapsulation_others' data-language-original="Yes, all of this is protected by encapsulation.">
+								Yes, all of this is protected by encapsulation.
+							</span>
+						<?php } ?>
+						-->
+								<span data-language='sidebar_input__checkbox_wholly_protected_by_encapsulation_walls' data-language-original="Yes, all of this is protected by encapsulation. (Any part occupied by a door or window is automatically considered not encapsulated.)">
+									Yes, all of this is protected by encapsulation.
+									(Any part occupied by a door or window is automatically considered not encapsulated.)
+								</span>
 							</label>
 						</p>
 					</div>
@@ -1077,8 +1083,8 @@ $elements = array(
 						<p data-language='sidebar_input__select_area_for_encapsulation' data-language-original="Select the area of encapsulation by clicking on the button, below:">
 							Select the area of encapsulation by clicking on the button, below:
 						</p>
-						<div class='button_wrap'>
-							<button class='secondary_button' data-sidebar-secondary-action-button='encapsulation_area' data-language='sidebar_input__edit_area_for_encapsulation_button' data-language-original="Edit the encapsulation area">
+						<div>
+							<button class='secondary_button encapsulation-button' data-sidebar-secondary-action-button='encapsulation_area' data-language='sidebar_input__edit_area_for_encapsulation_button' data-language-original="Edit the encapsulation area">
 								Edit the encapsulation area
 							</button>
 						</div>
@@ -1127,71 +1133,71 @@ $elements = array(
 						<div class='object' data-input-group-type='add_door'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='door'>
 								<div>
-								<img src='<?php echo $elements['door']['image']; ?>' alt='Door' data-language-alt='alt__icon_for_door' />
-								<p data-language='sidebar_input__add_object_door' data-language-original="Door">Door</p>
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
+									<img src='<?php echo $elements['door']['image']; ?>' alt='Door' data-language-alt='alt__icon_for_door' />
+									<p data-language='sidebar_input__add_object_door' data-language-original="Door">Door</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717" />
 								</div>
-								
+
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_window'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='window'>
 								<div>
 									<img src='<?php echo $elements['window']['image']; ?>' alt='Window' data-language-alt='alt__icon_for_window' />
-								<p data-language='sidebar_input__add_object_window' data-language-original="Window">Window</p>
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
+									<p data-language='sidebar_input__add_object_window' data-language-original="Window">Window</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717" />
 								</div>
-								
+
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_beam'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='beam'>
 								<div>
 									<img src='<?php echo $elements['beam']['image']; ?>' alt='Beam' data-language-alt='alt__icon_for_beam' />
-								<p data-language='sidebar_input__add_object_beam' data-language-original="Beam">Beam</p>
+									<p data-language='sidebar_input__add_object_beam' data-language-original="Beam">Beam</p>
 								</div>
-								
+
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
-</svg>
+									<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717" />
+								</svg>
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_column'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='column'>
 								<div>
 									<img src='<?php echo $elements['column']['image']; ?>' alt='A column' data-language-alt='alt__icon_for_column' />
-								<p data-language='sidebar_input__add_object_column' data-language-original="Column">Column</p>
+									<p data-language='sidebar_input__add_object_column' data-language-original="Column">Column</p>
 								</div>
-								
+
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
-</svg>
+									<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717" />
+								</svg>
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_lightframe_wall'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='lightframe_wall'>
 								<div>
 									<img src='<?php echo $elements['lightframe_wall']['image']; ?>' alt='Light frame wall' data-language-alt='alt__icon_for_lightframe_wall' />
-								<p data-language='sidebar_input__add_object_lightframe_wall' data-language-original="Lightframe wall">Lightframe wall</p>
+									<p data-language='sidebar_input__add_object_lightframe_wall' data-language-original="Lightframe wall">Lightframe wall</p>
 								</div>
-								
+
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
-</svg>
+									<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717" />
+								</svg>
 							</button>
 						</div>
 						<div class='object' data-input-group-type='add_mass_timber_wall'>
 							<button data-sidebar-secondary-action-button='add_object' data-object-name='mass_timber_wall'>
 								<div>
 									<img src='<?php echo $elements['mass_timber_wall']['image']; ?>' alt='Mass timber wall' data-language-alt='alt__icon_for_mass_timber_wall' />
-								<p data-language='sidebar_input__add_object_mass_timber_wall' data-language-original="Mass timber wall">Mass timber wall</p>
+									<p data-language='sidebar_input__add_object_mass_timber_wall' data-language-original="Mass timber wall">Mass timber wall</p>
 								</div>
-								
+
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717"/>
-</svg>
+									<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#171717" />
+								</svg>
 							</button>
 						</div>
 					</div>
@@ -1264,21 +1270,21 @@ $elements = array(
 					</div>
 
 					<!-- Information: Door -->
-					<div class='input_group information' data-input_group_type='information_door' data-language='sidebar_information__about_door' data-language-original="">
+					<div class='input_group information' data-input-group-type='information_door' data-language='sidebar_information__about_door' data-language-original="">
 						<p>
 							This is a door. You can modify its position by clicking on the Move button or its length and height by clicking on the Edit button.
 						</p>
 					</div>
 
 					<!-- Information: Window -->
-					<div class='input_group information' data-input_group_type='information_window' data-language='sidebar_information__about_window' data-language-original="">
+					<div class='input_group information' data-input-group-type='information_window' data-language='sidebar_information__about_window' data-language-original="">
 						<p>
 							This is a window. It could also represent an opening without glass. You can modify its position by clicking on the Move button above. You can also modify its length, height, or distance from the floor by clicking on the Edit button.
 						</p>
 					</div>
 
 					<!-- Information: Beam -->
-					<div class='input_group information' data-input_group_type='information_beam' data-language='sidebar_information__about_beam' data-language-original="">
+					<div class='input_group information' data-input-group-type='information_beam' data-language='sidebar_information__about_beam' data-language-original="">
 						<p>
 							This is a beam. It is placed on the ceiling. You can modify its dimensions and position by dragging it in the canvas area, and by clicking on the Move or Edit button on this sidebar.
 						</p>
@@ -1291,7 +1297,7 @@ $elements = array(
 					</div>
 
 					<!-- Information: Column -->
-					<div class='input_group information' data-input_group_type='information_column' data-language='sidebar_information__about_column' data-language-original="">
+					<div class='input_group information' data-input-group-type='information_column' data-language='sidebar_information__about_column' data-language-original="">
 						<p>
 							This is a column. It is placed on the floor and extends onto the ceiling by default. However, you can modify its height as you see fit.
 						</p>
@@ -1307,7 +1313,7 @@ $elements = array(
 					</div>
 
 					<!-- Information: Lightframe wall -->
-					<div class='input_group information' data-input_group_type='information_lightframe_wall' data-language='sidebar_information__about_lightframe_wall' data-language-original="">
+					<div class='input_group information' data-input-group-type='information_lightframe_wall' data-language='sidebar_information__about_lightframe_wall' data-language-original="">
 						<p>
 							This is a lightframe wall. It is by default exposed to fire.
 						</p>
@@ -1323,7 +1329,7 @@ $elements = array(
 					</div>
 
 					<!-- Information: Mass timber wall -->
-					<div class='input_group information' data-input_group_type='information_mass_timber_wall' data-language='sidebar_information__about_mass_timber_wall' data-language-original="">
+					<div class='input_group information' data-input-group-type='information_mass_timber_wall' data-language='sidebar_information__about_mass_timber_wall' data-language-original="">
 						<p>
 							This is a mass timber wall.
 						</p>
