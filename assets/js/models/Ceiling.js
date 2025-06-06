@@ -1,5 +1,5 @@
 import * as config from "../configurations/config.js";
-import { Face } from "./Face.js?v=20250503";
+import { Face } from "./Face.js";
 //const { Face } = await import(`./Face.js?v=${config.VERSION}`);
 
 export class Ceiling {
