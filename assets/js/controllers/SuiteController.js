@@ -202,12 +202,44 @@ export class SuiteController {
 	    });
 	    
 	    // Mouse Events
-	    this.canvas.addEventListener("mousedown", (e) => this.onMouseDown(e));
-	    this.canvas.addEventListener("mousemove", (e) => this.onMouseMove(e));
-	    this.canvas.addEventListener("mouseup", (e) => this.onMouseUp(e));
-	    this.canvas.addEventListener("mouseenter", (e) => this.onMouseEnter(e));
-	    this.canvas.addEventListener("mouseleave", (e) => this.onMouseLeave(e));
-	    this.canvas.addEventListener("wheel", (e) => this.onWheelMove(e));
+		this.canvas.addEventListener("mousedown", (e) => this.onMouseDown(e));
+		this.canvas.addEventListener("mousemove", (e) => this.onMouseMove(e));
+		this.canvas.addEventListener("mouseup", (e) => this.onMouseUp(e));
+		this.canvas.addEventListener("mouseenter", (e) => this.onMouseEnter(e));
+		this.canvas.addEventListener("mouseleave", (e) => this.onMouseLeave(e));
+		this.canvas.addEventListener("wheel", (e) => this.onWheelMove(e));
+
+		// Eventos de toque para mobile
+		this.canvas.addEventListener("touchstart", (e) => {
+			if (e.touches.length === 1) {
+				const touch = e.touches[0];
+				const mouseEvent = new MouseEvent("mousedown", {
+					clientX: touch.clientX,
+					clientY: touch.clientY,
+					button: 0
+				});
+				this.onMouseDown(mouseEvent);
+			}
+		});
+		this.canvas.addEventListener("touchmove", (e) => {
+			if (e.touches.length === 1) {
+				const touch = e.touches[0];
+				const mouseEvent = new MouseEvent("mousemove", {
+					clientX: touch.clientX,
+					clientY: touch.clientY,
+					button: 0
+				});
+				this.onMouseMove(mouseEvent);
+			}
+		});
+		this.canvas.addEventListener("touchend", (e) => {
+			const mouseEvent = new MouseEvent("mouseup", {
+				clientX: 0,
+				clientY: 0,
+				button: 0
+			});
+			this.onMouseUp(mouseEvent);
+		});
 	    
 	    // UI Events
 	    $("#suiteZoomIn").addEventListener("click", (e) => {
