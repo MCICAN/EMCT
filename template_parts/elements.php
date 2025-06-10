@@ -1353,3 +1353,22 @@ $elements = array(
 		</div>
 	</div>
 <?php } ?>
+
+<?php
+if (isset($_SERVER['HTTP_USER_AGENT']) && preg_match('/Mobile|Android|iPhone|iPad|iPod/i', $_SERVER['HTTP_USER_AGENT'])) {
+    echo "<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.sidebar-toggle-btn');
+            toggleButtons.forEach(button => {
+                button.innerHTML = '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><path d=\"M10.0001 10.9767L14.1251 6.85167L15.3034 8.03L10.0001 13.3333L4.69678 8.03L5.87511 6.85167L10.0001 10.9767Z\" fill=\"#171717\"/></svg>';
+                const mainWrap = button.closest('.element_wrap').querySelector('.mainWrap');
+                mainWrap.style.display = 'none'; // Start closed
+                button.addEventListener('click', function() {
+                    const isExpanded = mainWrap.style.display === 'block';
+                    mainWrap.style.display = isExpanded ? 'none' : 'block';
+                });
+            });
+        });
+    </script>";
+}
+?>

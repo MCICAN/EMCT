@@ -927,3 +927,5 @@ Stack trace:
 [03-Jun-2025 18:37:04 Europe/Berlin] no:30001 - beam_side_1 - expo: 11360 - face: 11360 - embed: 0
 [03-Jun-2025 18:37:04 Europe/Berlin] no:30001 - beam_side_2 - expo: 11360 - face: 11360 - embed: 0
 [03-Jun-2025 18:37:04 Europe/Berlin] no:30001 - beam_bottom - expo: 11360 - face: 11360 - embed: 0
+[09-Jun-2025 16:45:05 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 1364 in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 2136
+[09-Jun-2025 16:45:12 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 1364 in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 2136

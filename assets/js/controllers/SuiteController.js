@@ -9063,8 +9063,6 @@ export class SuiteController {
 		$("[data-canvas-list-object-button]").classList.add("hidden");
 		$("[data-canvas-3d-button]").classList.add("hidden");
 		$("[data-canvas-showID-button]").classList.add("hidden");
-		// Hide bottom_button_wrap
-		document.querySelector(".bottom_button_wrap").classList.add("hidden");
 	}
 	
 	// End the encapsulation area drawing program
@@ -9120,8 +9118,6 @@ export class SuiteController {
 		$("[data-canvas-list-object-button]").classList.remove("hidden");
 		$("[data-canvas-3d-button]").classList.remove("hidden");
 		$("[data-canvas-showID-button]").classList.remove("hidden");
-		// Unhide bottom_button_wrap
-		document.querySelector(".bottom_button_wrap").classList.remove("hidden");
 	}
 	
 	// Apply encapsulation circle movement
@@ -10067,5 +10063,4 @@ export class SuiteController {
 //            return null;
 //        }
 //    }
-// 
 }

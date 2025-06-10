@@ -1,4 +1,4 @@
-<div class='nav_wrap'>
+<div class='nav_wrap steps-scroll-wrapper'>
 	<ul class='steps clearfix'>
 		
 		<!-- Step 1 -->
