@@ -244,6 +244,7 @@ input[type="number"]:focus {
   font-weight: 600;
   line-height: 19.6px; /* 140% */
   letter-spacing: -0.28px;
+  min-width: 138.9px;
 }
 
 
@@ -1074,6 +1075,11 @@ label.radio_label input[type="radio"]:checked::after {
   }
   .navigation .steps li.connector {
     min-width: 20px;
+  }
+}
+@media (max-width: 1338px) {
+  .navigation .steps li.label a {
+    font-size: 12px;
   }
 }
 
@@ -1954,6 +1960,7 @@ tr:not(.hidden):nth-child(even) {
   border-radius: 6px;
   border: 1px solid #bebebe;
   background: #fff;
+  flex-wrap: wrap;
 }
 
 .menu-toggle {
@@ -2179,4 +2186,9 @@ letter-spacing: -0.24px;
 }
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
   flex-wrap: nowrap !important;
+}
+@media (max-width: 460px) {
+  .app .hint {
+    display: none !important;
+  }
 }
