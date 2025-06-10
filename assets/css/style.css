@@ -634,11 +634,11 @@ label.radio_label input[type="radio"]:checked::after {
   background: var(--background-color-neutral);
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .structure {
     grid-template-columns: 280px 1fr;
   }
-}
+} */
 
 /**=================================================================
  * .element_wrap
