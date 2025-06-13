@@ -12,57 +12,7 @@ import { MouseTracker } from "./utilities/mouseTracker.js";
 
 window.addEventListener("load", () => {
 	const canvas = $("#suiteCanvas");
-	if (!canvas) return; // Corrige erro caso canvas não exista
 	const ctx = canvas.getContext("2d");
-
-	const undoStack = [];
-	const maxUndo = 20; // Limite máximo de passos salvos
-
-	// Salva o estado atual do canvas
-	function saveState() {
-		if (undoStack.length >= maxUndo) {
-			undoStack.shift(); // Remove o mais antigo se passar do limite
-		}
-		undoStack.push(canvas.toDataURL());
-	}
-
-	// Faz o undo restaurando o último estado salvo
-	function undo() {
-		if (undoStack.length > 0) {
-			const imgData = undoStack.pop();
-			const img = new Image();
-			img.src = imgData;
-			img.onload = function () {
-				ctx.clearRect(0, 0, canvas.width, canvas.height);
-				ctx.drawImage(img, 0, 0);
-			};
-		}
-	}
-
-	// Exemplo de ação no canvas (desenhar algo ao clicar)
-	canvas.addEventListener("click", (e) => {
-		saveState();
-		ctx.fillStyle = "blue";
-		ctx.beginPath();
-		ctx.arc(e.offsetX, e.offsetY, 20, 0, Math.PI * 2);
-		ctx.fill();
-	});
-
-	// Botão de undo
-	const undoBtn = document.getElementById("undoBtn");
-	if (undoBtn) {
-		undoBtn.addEventListener("click", undo);
-	}
-
-	// Atalho de teclado Ctrl+Z
-	document.addEventListener("keydown", (e) => {
-		if (e.ctrlKey && e.key === "z") {
-			undo();
-		}
-	});
-
-	// Start tracking the mouse as soon as app loads
-	MouseTracker.init(canvas);
 	
 	// Create an empty suite
 	const suite = new Suite(false, true);
@@ -76,17 +26,14 @@ window.addEventListener("load", () => {
 	// Create a language service
 	const languageService = new LanguageService();
 	
-	// Create an outcome service
-	const outcomeService = new OutcomeService();
+	// Create a language controller (page_loader is removed in LanguageService.loadLanguage())
+	const languageController = new LanguageController(languageService, suite, "en");
 	
 	// Create a navigation controller
-	const navigationController = new NavigationController(suite, suiteRenderer, threeDRenderer, languageService, outcomeService);
-	
-	// Create a language controller (page_loader is removed in LanguageService.loadLanguage())
-	const languageController = new LanguageController(languageService, outcomeService, suite, suiteRenderer, navigationController, "en");
+	const navigationController = new NavigationController(suite, suiteRenderer, threeDRenderer, languageService);
 	
 	// Create a suite controller
-	const suiteController = new SuiteController(canvas, suite, suiteRenderer, threeDRenderer, navigationController, languageService, outcomeService);
+	const suiteController = new SuiteController(canvas, suite, suiteRenderer, threeDRenderer, navigationController, languageService);
 });
 
 document.addEventListener('DOMContentLoaded', function() {

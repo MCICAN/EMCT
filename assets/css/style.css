@@ -1363,6 +1363,12 @@ letter-spacing: -0.28px;
   cursor: all-scroll;
 }
 
+/* Garanta que seja aplicado no seu seletor de canvas */
+#suiteCanvas {
+  touch-action: none !important;       /* bloqueia scroll/pinch nativo */
+  -ms-touch-action: none !important;   /* para IE/Edge antigos */
+}
+
 /**=================================================================
  * .element_wrap .mainWrap .app .appArea.step_3d (Step 4)
  =================================================================*/
