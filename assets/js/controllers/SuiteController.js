@@ -11061,36 +11061,46 @@ export class SuiteController {
   //============================================
   // Canvas Dimensions and Unit Conversion Calculation
   //============================================
-  updateCanvasDimensions() {
-    // 1) pure DOM references
-    const sidebar = document.getElementById("sidebarLeft");
-    const header = document.querySelector("header");
-    const navigation = document.getElementById("navigation");
+	updateCanvasDimensions() {
+	// 1) pure DOM refs
+	const sidebar    = document.getElementById("sidebarLeft");
+	const header     = document.querySelector("header");
+	const navigation = document.getElementById("navigation");
 
-    // 2) read dimensions
-    const sidebarW = sidebar ? sidebar.offsetWidth : 0; //
-    const headerH = header ? header.offsetHeight : 0; //
-    const navH = navigation ? navigation.offsetHeight : 0; //
+	// 2) read dims (0 if missing)
+	const sidebarW = sidebar    ? sidebar.offsetWidth     : 0;
+	const headerH  = header     ? header.offsetHeight     : 0;
+	const navH     = navigation ? navigation.offsetHeight : 0;
 
-    // 3) here you “force” availW = sidebarW, ignoring everything else
-    const availW = sidebarW;
-    const availH = window.innerHeight - headerH - navH;
+	// 3) pick strategy
+	const isMobile = window.innerWidth < 800;
 
-    console.log("FORCED ➞ availW, availH =", availW, availH);
+	let availW, availH;
 
-    // 4) resize the internal buffer of the <canvas>
-    this.canvas.width = availW;
-    this.canvas.height = availH;
+	if (isMobile) {
+		// ————— Mobile: “force” availW = sidebarW —————
+		availW = sidebarW;
+		availH = window.innerHeight - headerH - navH;
+	} else {
+		// ————— Desktop: your original logic —————
+		availW = window.innerWidth  - sidebarW;
+		availH = window.innerHeight - headerH - navH;
+	}
 
-    // 5) update internal properties
-    this.canvas_width = availW;
-    this.canvas_height = availH;
+	// 4) resize the internal pixel buffer
+	this.canvas.width  = Math.max(availW, 0);
+	this.canvas.height = Math.max(availH, 0);
 
-    // 6) redraw
-    if (typeof this.suiteRenderer.draw === "function") {
-      this.suiteRenderer.draw();
-    }
-  }
+	// 5) store for your own layout logic
+	this.canvas_width  = availW;
+	this.canvas_height = availH;
+
+	// 6) trigger a redraw
+	if (typeof this.suiteRenderer.draw === "function") {
+		this.suiteRenderer.draw();
+	}
+	}
+
 
   updatePxPerCm() {
     // 1px / cm probably makes the best sense because all objects store px
