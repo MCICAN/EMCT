@@ -26,14 +26,17 @@ window.addEventListener("load", () => {
 	// Create a language service
 	const languageService = new LanguageService();
 	
-	// Create a language controller (page_loader is removed in LanguageService.loadLanguage())
-	const languageController = new LanguageController(languageService, suite, "en");
+	// Create an outcome service
+	const outcomeService = new OutcomeService();
 	
 	// Create a navigation controller
-	const navigationController = new NavigationController(suite, suiteRenderer, threeDRenderer, languageService);
+	const navigationController = new NavigationController(suite, suiteRenderer, threeDRenderer, languageService, outcomeService);
+	
+	// Create a language controller (page_loader is removed in LanguageService.loadLanguage())
+	const languageController = new LanguageController(languageService, outcomeService, suite, suiteRenderer, navigationController, "en");
 	
 	// Create a suite controller
-	const suiteController = new SuiteController(canvas, suite, suiteRenderer, threeDRenderer, navigationController, languageService);
+	const suiteController = new SuiteController(canvas, suite, suiteRenderer, threeDRenderer, navigationController, languageService, outcomeService);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
