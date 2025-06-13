@@ -11076,8 +11076,6 @@ export class SuiteController {
     const availW = sidebarW;
     const availH = window.innerHeight - headerH - navH;
 
-    console.log("FORCED ➞ availW, availH =", availW, availH);
-
     // 4) resize the internal buffer of the <canvas>
     this.canvas.width = availW;
     this.canvas.height = availH;
