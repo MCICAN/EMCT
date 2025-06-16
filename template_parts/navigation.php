@@ -145,6 +145,42 @@
 		</li>
 	</ul>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const wrapper = document.querySelector('.nav_wrap.steps-scroll-wrapper');
+  if (!wrapper) return;
+
+  function scrollActive() {
+    const active = wrapper.querySelector('.steps li.label.active');
+    if (active) {
+      active.scrollIntoView({ 
+        behavior: 'smooth', 
+        inline:   'center', 
+        block:    'nearest' 
+      });
+    }
+  }
+
+  // 1) no load
+  scrollActive();
+
+  // 2) observa mudanças na lista
+  const observer = new MutationObserver(mutations => {
+    for (let m of mutations) {
+      if (m.type === 'attributes' && m.target.classList.contains('label')) {
+        scrollActive();
+        break;
+      }
+    }
+  });
+
+  // configura observer pra assistir mudança de classe em todos os lis
+  wrapper.querySelectorAll('.steps li.label').forEach(li => {
+    observer.observe(li, { attributes: true, attributeFilter: ['class'] });
+  });
+});
+</script>
 	
 <!--
 <button class='secondary_button nav_previous' id='nav_previous' disabled>

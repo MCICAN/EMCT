@@ -1355,20 +1355,85 @@ $elements = array(
 <?php } ?>
 
 <?php
-if (isset($_SERVER['HTTP_USER_AGENT']) && preg_match('/Mobile|Android|iPhone|iPad|iPod/i', $_SERVER['HTTP_USER_AGENT'])) {
-    echo "<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleButtons = document.querySelectorAll('.sidebar-toggle-btn');
-            toggleButtons.forEach(button => {
-                button.innerHTML = '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><path d=\"M10.0001 10.9767L14.1251 6.85167L15.3034 8.03L10.0001 13.3333L4.69678 8.03L5.87511 6.85167L10.0001 10.9767Z\" fill=\"#171717\"/></svg>';
-                const mainWrap = button.closest('.element_wrap').querySelector('.mainWrap');
-                mainWrap.style.display = 'none'; // Start closed
-                button.addEventListener('click', function() {
-                    const isExpanded = mainWrap.style.display === 'block';
-                    mainWrap.style.display = isExpanded ? 'none' : 'block';
-                });
-            });
-        });
-    </script>";
+if (
+  isset($_SERVER['HTTP_USER_AGENT']) &&
+  preg_match('/Mobile|Android|iPhone|iPad|iPod/i', $_SERVER['HTTP_USER_AGENT'])
+) {
+  echo "<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.sidebar-toggle-btn');
+    toggleButtons.forEach(button => {
+      // 1) SVG mobile
+      button.innerHTML = `
+        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\">
+          <path d=\"M10.0001 10.9767L14.1251 6.85167L15.3034 8.03L10.0001 13.3333L4.69678 8.03L5.87511 6.85167L10.0001 10.9767Z\" fill=\"#171717\"/>
+        </svg>
+      `;
+      const svgIcon   = button.querySelector('svg');
+      const mainWrap  = button.closest('.element_wrap').querySelector('.mainWrap');
+      const structure = document.querySelector('.structure');
+      if (!mainWrap || !structure) return;
+
+      svgIcon.style.transition = 'transform 0.2s ease';
+
+      // → força estado fechado no início
+      mainWrap.style.display = 'none';
+      svgIcon.style.transform = 'rotate(0deg)';
+      structure.classList.add('mobile-mainwrap-hidden');
+
+      // 2) Toggle on click
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = getComputedStyle(mainWrap).display === 'block';
+        mainWrap.style.display  = isOpen ? 'none' : 'block';
+        svgIcon.style.transform  = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+        structure.classList.toggle('mobile-mainwrap-hidden', isOpen);
+      });
+    });
+  });
+  </script>";
 }
 ?>
+
+<?php
+echo "<script>
+document.addEventListener('DOMContentLoaded', function(){
+  function updateLayout(){
+    var root     = document.querySelector('.structure'),
+        nav      = document.getElementById('navigation'),
+        sidebar  = document.getElementById('sidebarLeft'),
+        mainArea = document.querySelector('.mainArea');
+    if (!root || !nav || !sidebar || !mainArea) return;
+
+    if (window.innerWidth < 768) {
+      // mobile: mostra tudo em coluna e põe o nav antes da sidebar
+      root.style.display       = 'flex';
+      root.style.flexDirection = 'column';
+      if (nav.parentNode !== root) {
+        root.insertBefore(nav, sidebar);
+      }
+      nav.style.width      = '100%';
+      sidebar.style.width  = '100%';
+    } else {
+      // desktop: restaura grid e devolve o nav pra dentro da mainArea
+      root.style.display       = '';
+      root.style.flexDirection = '';
+      nav.style.width          = '';
+      sidebar.style.width      = '';
+      if (nav.parentNode !== mainArea) {
+        mainArea.insertBefore(nav, mainArea.firstElementChild);
+      }
+    }
+  }
+
+  updateLayout();
+  window.addEventListener('resize', updateLayout);
+});
+</script>";
+?>
+
+
+
+
+

@@ -1,4 +1,3 @@
-import * as config from "./configurations/config.js";
 import { Suite } from "./models/Suite.js";
 import { SuiteRenderer } from "./services/SuiteRenderer.js";
 import { ThreeDRenderer } from "./services/ThreeDRenderer.js";
@@ -8,7 +7,6 @@ import { NavigationController } from "./controllers/NavigationController.js";
 import { SuiteController } from "./controllers/SuiteController.js";
 import { LanguageController } from "./controllers/LanguageController.js";
 import { $, all } from "./utilities/domUtils.js";
-import { MouseTracker } from "./utilities/mouseTracker.js";
 
 window.addEventListener("load", () => {
 	const canvas = $("#suiteCanvas");
@@ -40,35 +38,42 @@ window.addEventListener("load", () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Sidebar close/open logic
-  var structure = document.querySelector('.structure');
-  var menuToggle = document.querySelector('.menu-toggle');
+  const structure  = document.querySelector('.structure');
+  const menuToggle = document.querySelector('.menu-toggle');
 
   function updateMenuToggleVisibility() {
-    if (structure.classList.contains('sidebar-closed')) {
-      menuToggle.style.display = 'block';
-    } else {
-      menuToggle.style.display = 'none';
-    }
+    menuToggle.style.display = structure.classList.contains('sidebar-closed')
+      ? 'block'
+      : 'none';
   }
 
-  // Atualiza a visibilidade do menu toggle ao carregar a página
-  updateMenuToggleVisibility();
+  function initDesktop() {
+    // só sobe o listener em telas largas
+    if (window.innerWidth <= 767) return;
 
-  document.body.addEventListener('click', function(e) {
-    var toggleBtn = e.target.closest('[data-sidebar-toggle]');
+    updateMenuToggleVisibility();
+    document.body.addEventListener('click', desktopHandler);
+  }
+
+  function desktopHandler(e) {
+    const toggleBtn      = e.target.closest('[data-sidebar-toggle]');
+    const closeBtnInside = e.target.closest('.sidebar-close-btn-inside');
+
     if (toggleBtn && structure) {
       e.preventDefault();
       structure.classList.toggle('sidebar-closed');
       updateMenuToggleVisibility();
     }
-    var closeBtnInside = e.target.closest('.sidebar-close-btn-inside');
     if (closeBtnInside && structure) {
       e.preventDefault();
       structure.classList.add('sidebar-closed');
       updateMenuToggleVisibility();
     }
-  });
+  }
+
+  window.addEventListener('resize', initDesktop);
+  initDesktop();
+
 
   // Fade effect logic
   var info = document.querySelector(".element_wrap[data-sidebar-type='step_1_instruction'] .input_group.information");
