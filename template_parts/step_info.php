@@ -51,7 +51,7 @@
 			</div>
 		</div>
 	</div>
-	<div class='button_wrap'>
+	<div class='button_wrap_step1'>
 		<button class='primary_button' id='step1NextButton' disabled>
 			<span class="primary_button_content" data-language='step_1__next_button' data-language-original="Next">Next Step <img src="assets/images/arrow-right-line.png" /></span> 
 		</button>
