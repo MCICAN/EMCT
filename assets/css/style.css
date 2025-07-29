@@ -464,8 +464,10 @@ label.radio_label input[type="radio"]:checked::after {
  * header
  =================================================================*/
 
- header {
-  min-height: 150px;
+@media (max-width: 767px) {
+  header {
+    min-height: 150px;
+  }
 }
 
 .announcement-bar {
@@ -590,8 +592,20 @@ label.radio_label input[type="radio"]:checked::after {
 .element_wrap[data-sidebar-type="step_1_instruction"] .input_group.information {
   flex: 1 1 auto;
   overflow-y: auto;
-  max-height: calc(100vh - 180px); /* ajuste conforme necessário */
-  scrollbar-width: none; /* Firefox */
+  position: relative;
+}
+.element_wrap[data-sidebar-type="step_1_instruction"] .mainWrap,
+.element_wrap[data-sidebar-type="step_1_instruction"] .area,
+.element_wrap[data-sidebar-type="step_1_instruction"] .input_group.information {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.element_wrap[data-sidebar-type="step_1_instruction"] .input_group.information {
+  flex: 1 1 auto;
+  overflow-y: auto;
   position: relative;
 }
 .element_wrap[data-sidebar-type="step_1_instruction"]
