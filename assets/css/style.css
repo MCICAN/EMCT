@@ -464,6 +464,10 @@ label.radio_label input[type="radio"]:checked::after {
  * header
  =================================================================*/
 
+ header {
+  min-height: 150px;
+}
+
 .announcement-bar {
   display: flex;
   height: 32px;
