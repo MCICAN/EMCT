@@ -472,7 +472,7 @@ label.radio_label input[type="radio"]:checked::after {
 
 .announcement-bar {
   display: flex;
-  height: 32px;
+  height: 37.5px;
   justify-content: space-between;
   padding: 12px 16px;
   background: #9a8142;
@@ -485,10 +485,11 @@ label.radio_label input[type="radio"]:checked::after {
 }
 .announcement-bar .right_group {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-end;
   gap: 20px;
   flex: 1 1 auto;
+  margin-right: 20px;
 }
 .announcement-bar .languages {
   position: relative;
@@ -984,7 +985,7 @@ label.radio_label input[type="radio"]:checked::after {
   background: var(--background-color-brightyellow);
   border-radius: 4px;
 
-  border-bottom: 1px solid #bebebe;
+  border-bottom: 1px solid #bebebe !important;
 }
 .navigation .steps {
   display: flex;
@@ -2569,14 +2570,13 @@ tr:not(.hidden):nth-child(even) {
   }
 
   .navigation {
-    border: 1px solid #bebebe;
     border-bottom: unset;
   }
 
-  .structure .sidebarLeft {
+  /* .structure .sidebarLeft {
     border-top: unset;
     border-bottom: unset;
-  }
+  } */
 
   .nav_wrap.steps-scroll-wrapper {
     overflow-x: auto;
@@ -2692,5 +2692,10 @@ tr:not(.hidden):nth-child(even) {
     .navbar-expand-md .navbar-nav .dropdown-menu {
         position: absolute;
         width: 60%;
-        left: 10%;
+        left: 30%;
     }
+  }
+
+  #mainMenu {
+    margin-left: 20%;
+  }
