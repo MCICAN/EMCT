@@ -228,12 +228,6 @@ $elements = array(
 						</svg>
 					</button>
 				</p>
-				<!-- Botão para toggle da sidebar -->
-				<button class="sidebar-toggle-btn" data-sidebar-toggle type="button" style="background: none; border: none; padding: 0; margin-left: 8px; display: inline-flex; align-items: center; cursor: pointer;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-						<path d="M21 18V20H3V18H21ZM6.95 3.55V13.45L2 8.5L6.95 3.55ZM21 11V13H12V11H21ZM21 4V6H12V4H21Z" fill="#757575" />
-					</svg>
-				</button>
 			</div>
 
 		</div>
