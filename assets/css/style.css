@@ -613,24 +613,7 @@ label.radio_label input[type="radio"]:checked::after {
   .input_group.information::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
-.element_wrap[data-sidebar-type="step_1_instruction"]
-  .input_group.information::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 180px;
-  pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(249, 247, 237, 0) 0%,
-    #f9f7ed 100%
-  );
-  z-index: 2;
-  transition: opacity 0.3s;
-  opacity: 1;
-}
+
 .element_wrap[data-sidebar-type="step_1_instruction"]
   .input_group.information.at-bottom::after {
   opacity: 0;
