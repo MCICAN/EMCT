@@ -1264,10 +1264,10 @@
 		$mpdf->WriteHTML($html);
 		
 		$filename = date("Y").date("m").date("d").date("H").date("i").date("s").'_Exposed_Mass_Timber_Calculate_Results.pdf';
-		$mpdf->Output(BASE_PATH . '/temp/pdfs/' .$filename, \Mpdf\Output\Destination::FILE);
+		$mpdf->Output(BASE_PATH . 'temp/pdfs/' .$filename, \Mpdf\Output\Destination::FILE);
 		
 		// URL of the PDF;
-		$url = BASE_URL . '/temp/pdfs/'.$filename;
+		$url = BASE_URL . 'temp/pdfs/'.$filename;
 		
 		// Return the data
 		echo json_encode(['success' => '1', 'URL' => $url, "language" => $language], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
