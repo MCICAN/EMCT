@@ -929,3 +929,24 @@ Stack trace:
 [03-Jun-2025 18:37:04 Europe/Berlin] no:30001 - beam_bottom - expo: 11360 - face: 11360 - embed: 0
 [09-Jun-2025 16:45:05 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 1364 in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 2136
 [09-Jun-2025 16:45:12 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 1364 in C:\xampp\htdocs\EMCT\template_parts\elements.php on line 2136
+[06-Aug-2025 15:54:32 Europe/Berlin] PHP Warning:  fopen(C:/xampp/htdocs/EMCT//temp/pdfs/20250806155432_Exposed_Mass_Timber_Calculate_Results.pdf): Failed to open stream: No such file or directory in C:\xampp\htdocs\EMCT\vendor\mpdf\mpdf\src\Mpdf.php on line 9629
+[06-Aug-2025 15:54:32 Europe/Berlin] PHP Fatal error:  Uncaught Mpdf\MpdfException: Unable to create output file C:/xampp/htdocs/EMCT//temp/pdfs/20250806155432_Exposed_Mass_Timber_Calculate_Results.pdf in C:\xampp\htdocs\EMCT\vendor\mpdf\mpdf\src\Mpdf.php:9632
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(1267): Mpdf\Mpdf->Output('C:/xampp/htdocs...', 'F')
+#1 C:\xampp\htdocs\EMCT\ajax.php(59): generatePDF()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\mpdf\mpdf\src\Mpdf.php on line 9632
+[06-Aug-2025 15:54:34 Europe/Berlin] PHP Warning:  fopen(C:/xampp/htdocs/EMCT//temp/pdfs/20250806155434_Exposed_Mass_Timber_Calculate_Results.pdf): Failed to open stream: No such file or directory in C:\xampp\htdocs\EMCT\vendor\mpdf\mpdf\src\Mpdf.php on line 9629
+[06-Aug-2025 15:54:34 Europe/Berlin] PHP Fatal error:  Uncaught Mpdf\MpdfException: Unable to create output file C:/xampp/htdocs/EMCT//temp/pdfs/20250806155434_Exposed_Mass_Timber_Calculate_Results.pdf in C:\xampp\htdocs\EMCT\vendor\mpdf\mpdf\src\Mpdf.php:9632
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(1267): Mpdf\Mpdf->Output('C:/xampp/htdocs...', 'F')
+#1 C:\xampp\htdocs\EMCT\ajax.php(59): generatePDF()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\mpdf\mpdf\src\Mpdf.php on line 9632
+[06-Aug-2025 15:54:41 Europe/Berlin] PHP Warning:  fopen(C:/xampp/htdocs/EMCT//temp/pdfs/20250806155441_Exposed_Mass_Timber_Calculate_Results.pdf): Failed to open stream: No such file or directory in C:\xampp\htdocs\EMCT\vendor\mpdf\mpdf\src\Mpdf.php on line 9629
+[06-Aug-2025 15:54:41 Europe/Berlin] PHP Fatal error:  Uncaught Mpdf\MpdfException: Unable to create output file C:/xampp/htdocs/EMCT//temp/pdfs/20250806155441_Exposed_Mass_Timber_Calculate_Results.pdf in C:\xampp\htdocs\EMCT\vendor\mpdf\mpdf\src\Mpdf.php:9632
+Stack trace:
+#0 C:\xampp\htdocs\EMCT\ajax.php(1267): Mpdf\Mpdf->Output('C:/xampp/htdocs...', 'F')
+#1 C:\xampp\htdocs\EMCT\ajax.php(59): generatePDF()
+#2 {main}
+  thrown in C:\xampp\htdocs\EMCT\vendor\mpdf\mpdf\src\Mpdf.php on line 9632
