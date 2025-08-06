@@ -556,6 +556,12 @@
 	}
 	
 	function generatePDF(){
+		// Garantir que o diretório temp/pdfs existe
+		$pdfDir = BASE_PATH . 'temp/pdfs/';
+		if (!file_exists($pdfDir)) {
+			mkdir($pdfDir, 0755, true);
+		}
+		
 		$data = json_decode(file_get_contents("php://input"), true);
 		
 		// Calculations
