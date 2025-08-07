@@ -37,7 +37,8 @@ function showMobileBlockMessage() {
     blocker.style.display = 'flex';
     blocker.style.flexDirection = 'column';
     blocker.style.alignItems = 'center';
-    blocker.style.justifyContent = 'center';
+    blocker.style.justifyContent = 'flex-start';
+    blocker.style.paddingTop = '50px';
     blocker.style.textAlign = 'center';
     blocker.style.pointerEvents = 'all';
 
